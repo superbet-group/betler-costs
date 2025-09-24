@@ -1,0 +1,173 @@
+{
+    "ResultsByTime": [
+        {
+            "TimePeriod": {
+                "Start": "2024-09-01",
+                "End": "2024-10-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "8824.735711",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-01",
+                "End": "2024-11-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "8858.4717665",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-01",
+                "End": "2024-12-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "17416.78079501",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-01",
+                "End": "2025-01-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "29654.8795565",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-01",
+                "End": "2025-02-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "28621.211459",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-01",
+                "End": "2025-03-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "28134.168123",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-01",
+                "End": "2025-04-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "28890.742505",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-01",
+                "End": "2025-05-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "29196.3463055",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-01",
+                "End": "2025-06-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "30271.9381576408",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-01",
+                "End": "2025-07-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "40250.2296993091",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-01",
+                "End": "2025-08-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "15906.687708",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-01",
+                "End": "2025-09-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "18654.115042",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        }
+    ],
+    "DimensionValueAttributes": []
+}

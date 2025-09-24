@@ -1,0 +1,27 @@
+{
+  "model_type": "core_aws_cost",
+  "methodology": "Multiple linear regression on daily AWS costs (excluding tax and Cognito)",
+  "data_points": 363,
+  "date_range": {
+    "start": "2024-09-24",
+    "end": "2025-09-23"
+  },
+  "model": {
+    "intercept": -6412.140466788133,
+    "transaction_coefficient": 1.912397541264057e-05,
+    "customer_coefficient": 0.0015517467908333926,
+    "r_squared": 0.8791546465899777,
+    "rmse": 871.7254046363354,
+    "equation": "Cost = -6412.1405 + 0.00001912 * Transaction_Volume + 0.0016 * Customer_Volume"
+  },
+  "cost_drivers": {
+    "per_transaction": 1.912397541264057e-05,
+    "per_customer": 0.0015517467908333926
+  },
+  "performance": {
+    "rmse": 871.7254046363354,
+    "r_squared": 0.8791546465899777,
+    "mean_cost": 10712.70754635983
+  },
+  "generated_date": "2025-09-24T12:17:28.050818"
+}

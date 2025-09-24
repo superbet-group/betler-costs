@@ -1,0 +1,1 @@
+- If we ever need a new Python dependency, we should delete the virtual environment directory so that when we re-run the setup a new venv is created with that new dependency.

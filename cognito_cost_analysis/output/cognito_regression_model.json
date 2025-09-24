@@ -1,0 +1,28 @@
+{
+  "model_type": "hybrid_cognito",
+  "methodology": "Pre-optimization regression with post-July 2025 optimization factor",
+  "training_period": "2024-09 to 2025-06",
+  "training_months": 10,
+  "total_months": 12,
+  "optimization_cutoff": "2025-07",
+  "optimization_factor": 0.4,
+  "base_model": {
+    "intercept": -50519.896270395904,
+    "transaction_coefficient": -2.5218074965858965e-07,
+    "customer_coefficient": 0.008231958937754198,
+    "r_squared": 0.8667771204943335,
+    "equation": "Cognito_Cost = -50519.8963 + -0.00000025 * Monthly_Transactions + 0.0082 * Monthly_Customers"
+  },
+  "hybrid_model": {
+    "rmse": 3199.8804690775905,
+    "rmse_percent": 13.488311171474516,
+    "mean_actual_cost": 23723.35890237166
+  },
+  "cost_drivers": {
+    "per_transaction_pre_opt": -2.5218074965858965e-07,
+    "per_customer_pre_opt": 0.008231958937754198,
+    "per_transaction_post_opt": -1.0087229986343586e-07,
+    "per_customer_post_opt": 0.0032927835751016795
+  },
+  "generated_date": "2025-09-24T12:17:44.577750"
+}
