@@ -23,7 +23,7 @@ if [ ! -f "../cognito_cost_analysis/output/cognito_regression_model.json" ]; the
     exit 1
 fi
 
-# Set up virtual environment for Python dependencies
+# Set up virtual environment for Python dependencies (only if not managed centrally)
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
     python3 -m venv venv

@@ -23,10 +23,21 @@ if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
     tsh proxy app grafana --port=8080 &
     TSH_PID=$!
     echo "TSH proxy started (PID: $TSH_PID)"
+
+    # Give proxy a moment to start
+    sleep 2
+
+    # Test if proxy is working
+    if ! curl -s http://localhost:8080 > /dev/null 2>&1; then
+        echo "Error: TSH proxy failed to start properly"
+        kill $TSH_PID 2>/dev/null || true
+        exit 1
+    fi
+
     echo ""
 fi
 
-# Clean up all output directories
+# Clean up all output directories and virtual environments
 echo "Cleaning up previous analysis results..."
 if [ -d "betler_cost_analysis/output" ]; then
     echo "  - Removing betler_cost_analysis/output/"
@@ -36,6 +47,11 @@ fi
 if [ -d "cognito_cost_analysis/output" ]; then
     echo "  - Removing cognito_cost_analysis/output/"
     rm -rf cognito_cost_analysis/output
+fi
+
+if [ -d "betler_predictive_analysis/output" ]; then
+    echo "  - Removing betler_predictive_analysis/output/"
+    rm -rf betler_predictive_analysis/output
 fi
 
 if [ -d "betler_cost_analysis/venv" ]; then
@@ -48,7 +64,45 @@ if [ -d "cognito_cost_analysis/venv" ]; then
     rm -rf cognito_cost_analysis/venv
 fi
 
+if [ -d "betler_predictive_analysis/venv" ]; then
+    echo "  - Removing betler_predictive_analysis/venv/"
+    rm -rf betler_predictive_analysis/venv
+fi
+
 echo "Cleanup complete."
+echo ""
+
+# Set up centralized Python virtual environments
+echo "Setting up Python virtual environments..."
+
+# Core analysis venv
+echo "  - Setting up betler_cost_analysis virtual environment..."
+cd betler_cost_analysis
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt > /dev/null 2>&1
+deactivate
+cd ..
+
+# Cognito analysis venv
+echo "  - Setting up cognito_cost_analysis virtual environment..."
+cd cognito_cost_analysis
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt > /dev/null 2>&1
+deactivate
+cd ..
+
+# Predictive analysis venv
+echo "  - Setting up betler_predictive_analysis virtual environment..."
+cd betler_predictive_analysis
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt > /dev/null 2>&1
+deactivate
+cd ..
+
+echo "Virtual environments ready."
 echo ""
 
 # Run core Betler cost analysis with proxy skip
@@ -77,16 +131,8 @@ echo "RUNNING PREDICTIVE COST ANALYSIS"
 echo "=========================================="
 cd betler_predictive_analysis
 
-# Clean up previous predictive results
-if [ -d "output" ]; then
-    echo "  - Removing betler_predictive_analysis/output/"
-    rm -rf output
-fi
-
-if [ -d "venv" ]; then
-    echo "  - Removing betler_predictive_analysis/venv/"
-    rm -rf venv
-fi
+# Activate the pre-configured virtual environment
+source venv/bin/activate
 
 # Run predictive analysis with default parameters
 echo "Running predictive cost analysis..."
@@ -95,12 +141,14 @@ python predictive_cost_analysis.py
 echo "Running extended 24-month dashboard..."
 python extended_dashboard.py
 
+deactivate
+
 echo "✓ Predictive cost analysis complete"
 cd ..
 echo ""
 
-# Clean up TSH proxy
-if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
+# Clean up TSH proxy (only if we started it)
+if [ "${SKIP_TSH_PROXY:-false}" != "true" ] && [ ! -z "${TSH_PID:-}" ]; then
     echo "Stopping TSH proxy..."
     kill $TSH_PID 2>/dev/null || true
     echo "TSH proxy stopped."

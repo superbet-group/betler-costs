@@ -98,14 +98,6 @@ aws ce get-cost-and-usage \
 TOTAL_COST=$(jq -r '[.ResultsByTime[].Total.AmortizedCost.Amount | tonumber] | add' output/aws_daily_costs.json)
 echo "Total AWS cost for last 12 months (excluding tax and Cognito): \$$(printf "%.2f" $TOTAL_COST)"
 
-# Set up virtual environment for Python dependencies
-if [ ! -d "venv" ]; then
-    echo "Creating virtual environment..."
-    python3 -m venv venv
-    echo "Installing requirements..."
-    venv/bin/pip install -r requirements.txt
-fi
-
 # Merge all data into a single CSV file using Python
 echo "Merging data into CSV..."
 venv/bin/python merge_data.py
