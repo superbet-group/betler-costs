@@ -50,6 +50,18 @@ def extract_key_metrics():
             'data_months': cognito_results['data_period']['months']
         }
 
+    # Add non-prod analysis data if available
+    nonprod_results = read_json_results("betler_non-prod_analysis/output/results.json")
+    if nonprod_results:
+        metrics['nonprod_analysis'] = {
+            'total_historical_cost': nonprod_results['overall_metrics']['total_cost_12_months'],
+            'daily_average': nonprod_results['overall_metrics']['average_daily_cost'],
+            'data_days': nonprod_results['data_period']['days'],
+            'projected_12_months': nonprod_results['predictions']['combined']['total_12_months'],
+            'persistent_projected': nonprod_results['predictions']['persistent']['next_12_months_total'],
+            'transient_projected': nonprod_results['predictions']['transient']['next_12_months_total']
+        }
+
     return metrics
 
 def validate_data_quality():
@@ -81,6 +93,19 @@ def validate_data_quality():
             issues.append(f"Limited Cognito data ({data_months} months)")
     else:
         issues.append("Cognito analysis results missing")
+
+    # Check non-prod analysis results
+    nonprod_results = read_json_results("betler_non-prod_analysis/output/results.json")
+    if nonprod_results:
+        r_squared = nonprod_results.get('predictions', {}).get('persistent', {}).get('model_r2', 0)
+        data_days = nonprod_results.get('data_period', {}).get('days', 0)
+
+        if r_squared < 0.6:
+            issues.append(f"Non-prod model R² is low ({r_squared:.3f})")
+        if data_days < 300:
+            issues.append(f"Limited non-prod data ({data_days} days)")
+    else:
+        issues.append("Non-prod analysis results missing")
 
     return issues
 
@@ -124,6 +149,13 @@ def main():
         print(f"  ☁️  Core AWS: ${metrics['core_total']:,.0f} ({core_pct:.1f}%)")
         print(f"  🔐 Cognito: ${metrics['cognito_total']:,.0f} ({cognito_pct:.1f}%)")
 
+    # Add non-prod projection if available
+    if 'nonprod_analysis' in metrics:
+        print()
+        print(f"🔧 NON-PROD ENVIRONMENTS (12-month projection): ${metrics['nonprod_analysis']['projected_12_months']:,.0f}")
+        print(f"  🏗️  Persistent (dev01, qa, stage): ${metrics['nonprod_analysis']['persistent_projected']:,.0f}")
+        print(f"  ⚡ Transient (load testing, etc): ${metrics['nonprod_analysis']['transient_projected']:,.0f}")
+
     print()
     print("✅ Analysis complete - All models and predictions generated")
 
@@ -154,11 +186,13 @@ def main():
     print("  - betler_cost_analysis/output/")
     print("  - cognito_cost_analysis/output/")
     print("  - betler_predictive_analysis/output/")
+    print("  - betler_non-prod_analysis/output/")
     print()
     print("View dashboards:")
     print("  - open betler_cost_analysis/output/cost_analysis_dashboard.png")
     print("  - open cognito_cost_analysis/output/cognito_cost_analysis_dashboard.png")
     print("  - open betler_predictive_analysis/output/extended_24month_dashboard.png")
+    print("  - open betler_non-prod_analysis/output/non_prod_environment_dashboard.png")
     print()
     print("Key data files:")
     print("  - betler_predictive_analysis/output/predictive_cost_analysis.csv")

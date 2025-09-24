@@ -1,0 +1,5115 @@
+{
+    "ResultsByTime": [
+        {
+            "TimePeriod": {
+                "Start": "2024-09-24",
+                "End": "2024-09-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1313.9806912717",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-09-25",
+                "End": "2024-09-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1314.5026728571",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-09-26",
+                "End": "2024-09-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1320.755960088",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-09-27",
+                "End": "2024-09-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1318.2101203068",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-09-28",
+                "End": "2024-09-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1288.2532718683",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-09-29",
+                "End": "2024-09-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1283.809931136",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-09-30",
+                "End": "2024-10-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1315.0460355088",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-01",
+                "End": "2024-10-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1359.1061209743",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-02",
+                "End": "2024-10-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1347.3096152837",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-03",
+                "End": "2024-10-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1339.5540018408",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-04",
+                "End": "2024-10-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1318.7674823736",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-05",
+                "End": "2024-10-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1260.660156722",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-06",
+                "End": "2024-10-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1263.6010328908",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-07",
+                "End": "2024-10-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1324.8916062782",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-08",
+                "End": "2024-10-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1311.193800486",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-09",
+                "End": "2024-10-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1283.8794327044",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-10",
+                "End": "2024-10-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1377.4313749089",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-11",
+                "End": "2024-10-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1327.4640311326",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-12",
+                "End": "2024-10-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1254.0707976179",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-13",
+                "End": "2024-10-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1253.2735709789",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-14",
+                "End": "2024-10-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1286.1510221667",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-15",
+                "End": "2024-10-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1278.5197592487",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-16",
+                "End": "2024-10-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1329.6876613064",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-17",
+                "End": "2024-10-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1335.4934657449",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-18",
+                "End": "2024-10-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1425.516595364",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-19",
+                "End": "2024-10-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1232.1901070092",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-20",
+                "End": "2024-10-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1229.1383601171",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-21",
+                "End": "2024-10-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1254.7465507979",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-22",
+                "End": "2024-10-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1259.5402468085",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-23",
+                "End": "2024-10-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1288.9534601233",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-24",
+                "End": "2024-10-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1275.937107502",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-25",
+                "End": "2024-10-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1266.571066663",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-26",
+                "End": "2024-10-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1223.2415114407",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-27",
+                "End": "2024-10-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1216.4883407277",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-28",
+                "End": "2024-10-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1263.576343902",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-29",
+                "End": "2024-10-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1265.9697486113",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-30",
+                "End": "2024-10-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1272.6107075471",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-10-31",
+                "End": "2024-11-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1288.37040286",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-01",
+                "End": "2024-11-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1332.1001143759",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-02",
+                "End": "2024-11-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1285.5148716708",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-03",
+                "End": "2024-11-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1279.4041165444",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-04",
+                "End": "2024-11-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1318.2848281088",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-05",
+                "End": "2024-11-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1318.8966634025",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-06",
+                "End": "2024-11-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1310.300412167",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-07",
+                "End": "2024-11-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1297.4052553201",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-08",
+                "End": "2024-11-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1298.9840255646",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-09",
+                "End": "2024-11-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1265.1073090017",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-10",
+                "End": "2024-11-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1263.8251531021",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-11",
+                "End": "2024-11-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1305.6469214707",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-12",
+                "End": "2024-11-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1301.6468141505",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-13",
+                "End": "2024-11-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1302.1813292984",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-14",
+                "End": "2024-11-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1293.3818427603",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-15",
+                "End": "2024-11-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1277.6995418053",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-16",
+                "End": "2024-11-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1253.0180736998",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-17",
+                "End": "2024-11-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1249.4139329767",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-18",
+                "End": "2024-11-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1270.9568897889",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-19",
+                "End": "2024-11-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1297.6876974673",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-20",
+                "End": "2024-11-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1283.6811740263",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-21",
+                "End": "2024-11-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1274.6977923257",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-22",
+                "End": "2024-11-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1276.677759397",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-23",
+                "End": "2024-11-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1248.30844802",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-24",
+                "End": "2024-11-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1247.0964774247",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-25",
+                "End": "2024-11-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1294.4141907855",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-26",
+                "End": "2024-11-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1282.1697742122",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-27",
+                "End": "2024-11-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1283.6606362162",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-28",
+                "End": "2024-11-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1337.2975319206",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-29",
+                "End": "2024-11-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1287.6909557661",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-11-30",
+                "End": "2024-12-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1253.3914555342",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-01",
+                "End": "2024-12-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1308.8616726954",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-02",
+                "End": "2024-12-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1380.4986714676",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-03",
+                "End": "2024-12-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1400.3850451747",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-04",
+                "End": "2024-12-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1412.8700276826",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-05",
+                "End": "2024-12-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1384.1803088177",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-06",
+                "End": "2024-12-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1382.4371633961",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-07",
+                "End": "2024-12-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1334.355075154",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-08",
+                "End": "2024-12-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1343.9383957433",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-09",
+                "End": "2024-12-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1370.6586078107",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-10",
+                "End": "2024-12-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1343.6957441088",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-11",
+                "End": "2024-12-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1322.7775911097",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-12",
+                "End": "2024-12-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1381.4296401744",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-13",
+                "End": "2024-12-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1398.0142872193",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-14",
+                "End": "2024-12-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1364.5549721664",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-15",
+                "End": "2024-12-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1359.1894173052",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-16",
+                "End": "2024-12-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1441.9383114371",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-17",
+                "End": "2024-12-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1382.0805025346",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-18",
+                "End": "2024-12-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1397.7299369253",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-19",
+                "End": "2024-12-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1392.1730879754",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-20",
+                "End": "2024-12-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1396.9885067133",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-21",
+                "End": "2024-12-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1354.9305068047",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-22",
+                "End": "2024-12-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1347.8019084972",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-23",
+                "End": "2024-12-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1365.1803680034",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-24",
+                "End": "2024-12-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1357.9591968838",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-25",
+                "End": "2024-12-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1348.1249541108",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-26",
+                "End": "2024-12-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1346.6487950749",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-27",
+                "End": "2024-12-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1357.6003920061",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-28",
+                "End": "2024-12-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1353.5545476397",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-29",
+                "End": "2024-12-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1347.4746367971",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-30",
+                "End": "2024-12-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1360.8888633996",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2024-12-31",
+                "End": "2025-01-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1357.552216502",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-01",
+                "End": "2025-01-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1467.8560225654",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-02",
+                "End": "2025-01-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1488.0759934469",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-03",
+                "End": "2025-01-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1489.2415335286",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-04",
+                "End": "2025-01-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1430.1258742016",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-05",
+                "End": "2025-01-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1391.1479978283",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-06",
+                "End": "2025-01-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1427.1771412297",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-07",
+                "End": "2025-01-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1404.1805444406",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-08",
+                "End": "2025-01-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1389.2986576994",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-09",
+                "End": "2025-01-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1376.7494995189",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-10",
+                "End": "2025-01-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1365.0111034009",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-11",
+                "End": "2025-01-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1348.5823818836",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-12",
+                "End": "2025-01-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1349.7178148594",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-13",
+                "End": "2025-01-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1387.0877451601",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-14",
+                "End": "2025-01-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1392.6828810806",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-15",
+                "End": "2025-01-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1381.9450292593",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-16",
+                "End": "2025-01-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1395.9449395715",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-17",
+                "End": "2025-01-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1379.5020132891",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-18",
+                "End": "2025-01-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1334.9314464967",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-19",
+                "End": "2025-01-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1337.4149535732",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-20",
+                "End": "2025-01-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1360.5843249476",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-21",
+                "End": "2025-01-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1343.6615184543",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-22",
+                "End": "2025-01-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1346.7040087854",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-23",
+                "End": "2025-01-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1336.4303041112",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-24",
+                "End": "2025-01-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1321.6364314108",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-25",
+                "End": "2025-01-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1290.5724769991",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-26",
+                "End": "2025-01-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1293.565500137",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-27",
+                "End": "2025-01-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1388.9886402079",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-28",
+                "End": "2025-01-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1280.4113119612",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-29",
+                "End": "2025-01-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1271.8971463796",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-30",
+                "End": "2025-01-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1304.1898468813",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-01-31",
+                "End": "2025-02-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1337.9781733046",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-01",
+                "End": "2025-02-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1359.0510979701",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-02",
+                "End": "2025-02-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1344.9726229832",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-03",
+                "End": "2025-02-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1427.2121534843",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-04",
+                "End": "2025-02-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1392.0901014351",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-05",
+                "End": "2025-02-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1356.450634058",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-06",
+                "End": "2025-02-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1344.6641292074",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-07",
+                "End": "2025-02-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1357.7376348446",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-08",
+                "End": "2025-02-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1307.6572480945",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-09",
+                "End": "2025-02-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1300.7951348371",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-10",
+                "End": "2025-02-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1337.038190217",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-11",
+                "End": "2025-02-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1340.2409881529",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-12",
+                "End": "2025-02-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1340.4208687802",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-13",
+                "End": "2025-02-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1366.5345328416",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-14",
+                "End": "2025-02-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1371.0791393829",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-15",
+                "End": "2025-02-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1330.8189463837",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-16",
+                "End": "2025-02-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1244.3489353958",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-17",
+                "End": "2025-02-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1287.1014048706",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-18",
+                "End": "2025-02-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1373.819058417",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-19",
+                "End": "2025-02-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1397.9904198609",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-20",
+                "End": "2025-02-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1447.0243168824",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-21",
+                "End": "2025-02-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1408.1736317045",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-22",
+                "End": "2025-02-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1316.0384194875",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-23",
+                "End": "2025-02-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1301.5668924009",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-24",
+                "End": "2025-02-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1346.3677685333",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-25",
+                "End": "2025-02-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1362.5870234868",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-26",
+                "End": "2025-02-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1348.7717361267",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-27",
+                "End": "2025-02-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1380.0794669495",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-02-28",
+                "End": "2025-03-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1397.1271817519",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-01",
+                "End": "2025-03-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1383.1537851449",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-02",
+                "End": "2025-03-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1355.8615095731",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-03",
+                "End": "2025-03-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1399.5042903585",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-04",
+                "End": "2025-03-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1422.4962341078",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-05",
+                "End": "2025-03-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1375.1018702387",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-06",
+                "End": "2025-03-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1306.8191049013",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-07",
+                "End": "2025-03-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1401.1199967235",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-08",
+                "End": "2025-03-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1349.2883350801",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-09",
+                "End": "2025-03-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1352.3178858757",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-10",
+                "End": "2025-03-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1408.9243872753",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-11",
+                "End": "2025-03-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1418.907266592",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-12",
+                "End": "2025-03-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1482.9855487526",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-13",
+                "End": "2025-03-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1467.3033047928",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-14",
+                "End": "2025-03-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1456.1340413512",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-15",
+                "End": "2025-03-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1409.4560805664",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-16",
+                "End": "2025-03-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1413.6501301451",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-17",
+                "End": "2025-03-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1474.5154825574",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-18",
+                "End": "2025-03-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1433.6386166045",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-19",
+                "End": "2025-03-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1480.57532495",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-20",
+                "End": "2025-03-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1262.4401957025",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-21",
+                "End": "2025-03-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1250.6798045312",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-22",
+                "End": "2025-03-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1203.833441692",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-23",
+                "End": "2025-03-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1216.4160859897",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-24",
+                "End": "2025-03-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1275.3027179825",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-25",
+                "End": "2025-03-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1498.6583918013",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-26",
+                "End": "2025-03-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1538.6492486952",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-27",
+                "End": "2025-03-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1596.9070538837",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-28",
+                "End": "2025-03-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1603.648954138",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-29",
+                "End": "2025-03-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1546.7463888108",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-30",
+                "End": "2025-03-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1542.6013884977",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-03-31",
+                "End": "2025-04-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1614.3626044637",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-01",
+                "End": "2025-04-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1677.3032155551",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-02",
+                "End": "2025-04-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1650.0088313268",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-03",
+                "End": "2025-04-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1665.6406050329",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-04",
+                "End": "2025-04-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1648.5824697523",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-05",
+                "End": "2025-04-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1598.4417820453",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-06",
+                "End": "2025-04-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1595.0025936265",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-07",
+                "End": "2025-04-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1656.0093452047",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-08",
+                "End": "2025-04-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1636.388326642",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-09",
+                "End": "2025-04-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1636.0290083022",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-10",
+                "End": "2025-04-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1737.1654597187",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-11",
+                "End": "2025-04-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1699.9838088859",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-12",
+                "End": "2025-04-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1674.7870927331",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-13",
+                "End": "2025-04-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1655.2995367291",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-14",
+                "End": "2025-04-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1687.5667589139",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-15",
+                "End": "2025-04-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1680.5766657149",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-16",
+                "End": "2025-04-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1842.2769216224",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-17",
+                "End": "2025-04-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1887.3773747987",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-18",
+                "End": "2025-04-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1850.9244118763",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-19",
+                "End": "2025-04-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1826.9128230039",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-20",
+                "End": "2025-04-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1827.614968662",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-21",
+                "End": "2025-04-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1847.7068261977",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-22",
+                "End": "2025-04-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1741.5991218959",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-23",
+                "End": "2025-04-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1634.1502917645",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-24",
+                "End": "2025-04-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1758.9419308612",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-25",
+                "End": "2025-04-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1853.8513969593",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-26",
+                "End": "2025-04-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1827.8710092329",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-27",
+                "End": "2025-04-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1794.3248799889",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-28",
+                "End": "2025-04-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1816.8113911327",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-29",
+                "End": "2025-04-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1826.7741707462",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-04-30",
+                "End": "2025-05-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1757.4114809956",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-01",
+                "End": "2025-05-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1828.4411745899",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-02",
+                "End": "2025-05-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1902.6646408891",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-03",
+                "End": "2025-05-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1855.4171948946",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-04",
+                "End": "2025-05-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1847.6650622458",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-05",
+                "End": "2025-05-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1783.9431800623",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-06",
+                "End": "2025-05-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1827.7889649644",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-07",
+                "End": "2025-05-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1860.4109350291",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-08",
+                "End": "2025-05-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1822.6329918714",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-09",
+                "End": "2025-05-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2015.7715058136",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-10",
+                "End": "2025-05-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1711.0849884396",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-11",
+                "End": "2025-05-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1715.175782691",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-12",
+                "End": "2025-05-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1846.4365019686",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-13",
+                "End": "2025-05-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1859.8770419851",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-14",
+                "End": "2025-05-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1730.9267269104",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-15",
+                "End": "2025-05-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1752.2308414486",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-16",
+                "End": "2025-05-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1813.0868435081",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-17",
+                "End": "2025-05-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1826.1328448015",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-18",
+                "End": "2025-05-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1908.5356215021",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-19",
+                "End": "2025-05-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2168.567472188",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-20",
+                "End": "2025-05-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2156.7384256554",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-21",
+                "End": "2025-05-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2074.3418601645",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-22",
+                "End": "2025-05-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2147.9717653241",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-23",
+                "End": "2025-05-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2056.3154823229",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-24",
+                "End": "2025-05-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1699.1227331913",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-25",
+                "End": "2025-05-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1699.3898737647",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-26",
+                "End": "2025-05-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1863.3747665599",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-27",
+                "End": "2025-05-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1967.2369487622",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-28",
+                "End": "2025-05-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1979.3603466872",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-29",
+                "End": "2025-05-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2016.203704871",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-30",
+                "End": "2025-05-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2058.2018569681",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-05-31",
+                "End": "2025-06-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2022.5468646672",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-01",
+                "End": "2025-06-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2597.8525881786",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-02",
+                "End": "2025-06-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2169.2628111755",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-03",
+                "End": "2025-06-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2097.8681471084",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-04",
+                "End": "2025-06-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2275.7287566275",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-05",
+                "End": "2025-06-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2380.5295574198",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-06",
+                "End": "2025-06-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2376.3172695624",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-07",
+                "End": "2025-06-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2289.1938772637",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-08",
+                "End": "2025-06-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2290.8047558888",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-09",
+                "End": "2025-06-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2403.6525870673",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-10",
+                "End": "2025-06-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2349.0949184116",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-11",
+                "End": "2025-06-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2352.0342180066",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-12",
+                "End": "2025-06-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2350.7026623027",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-13",
+                "End": "2025-06-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2403.8145724627",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-14",
+                "End": "2025-06-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2347.2632193976",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-15",
+                "End": "2025-06-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2345.8381361897",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-16",
+                "End": "2025-06-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2405.6093067801",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-17",
+                "End": "2025-06-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2420.0045493726",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-18",
+                "End": "2025-06-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2395.5716193873",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-19",
+                "End": "2025-06-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2307.3544913263",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-20",
+                "End": "2025-06-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2136.6240609836",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-21",
+                "End": "2025-06-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2097.494036464",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-22",
+                "End": "2025-06-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2099.8369685053",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-23",
+                "End": "2025-06-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1983.9931722879",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-24",
+                "End": "2025-06-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1737.4991402658",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-25",
+                "End": "2025-06-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1751.0076927342",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-26",
+                "End": "2025-06-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1838.7303237584",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-27",
+                "End": "2025-06-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1942.4489414397",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-28",
+                "End": "2025-06-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1892.2601250422",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-29",
+                "End": "2025-06-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1893.0374493055",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-06-30",
+                "End": "2025-07-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1954.0615767127",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-01",
+                "End": "2025-07-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2599.8877738192",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-02",
+                "End": "2025-07-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2122.5645995562",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-03",
+                "End": "2025-07-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2144.8555984113",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-04",
+                "End": "2025-07-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2088.8488764033",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-05",
+                "End": "2025-07-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1996.7292431577",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-06",
+                "End": "2025-07-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "1984.2921719012",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-07",
+                "End": "2025-07-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2105.4303004136",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-08",
+                "End": "2025-07-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2069.102787262",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-09",
+                "End": "2025-07-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2204.0877460714",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-10",
+                "End": "2025-07-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2114.1449344196",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-11",
+                "End": "2025-07-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2608.7819089293",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-12",
+                "End": "2025-07-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2930.406639042",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-13",
+                "End": "2025-07-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2926.5873411775",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-14",
+                "End": "2025-07-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3059.123017744",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-15",
+                "End": "2025-07-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3156.0683322554",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-16",
+                "End": "2025-07-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3248.7118635914",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-17",
+                "End": "2025-07-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3588.9877941642",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-18",
+                "End": "2025-07-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3774.232013168",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-19",
+                "End": "2025-07-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3688.5490762129",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-20",
+                "End": "2025-07-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3696.8226066638",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-21",
+                "End": "2025-07-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3764.2727322139",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-22",
+                "End": "2025-07-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3760.2115586289",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-23",
+                "End": "2025-07-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3638.1676512285",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-24",
+                "End": "2025-07-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3282.2372231294",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-25",
+                "End": "2025-07-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3266.8980837934",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-26",
+                "End": "2025-07-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3179.3720998189",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-27",
+                "End": "2025-07-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3181.4172131856",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-28",
+                "End": "2025-07-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2571.2065866258",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-29",
+                "End": "2025-07-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2131.2973619299",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-30",
+                "End": "2025-07-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2093.6555513092",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-07-31",
+                "End": "2025-08-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2703.9800493788",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-01",
+                "End": "2025-08-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3818.2524187447",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-02",
+                "End": "2025-08-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3127.2954631985",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-03",
+                "End": "2025-08-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3133.9155294125",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-04",
+                "End": "2025-08-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3110.7433367849",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-05",
+                "End": "2025-08-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3103.6427977965",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-06",
+                "End": "2025-08-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3236.4444808265",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-07",
+                "End": "2025-08-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3308.5533297417",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-08",
+                "End": "2025-08-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3428.8452483819",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-09",
+                "End": "2025-08-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3483.0942071998",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-10",
+                "End": "2025-08-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3492.607281525",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-11",
+                "End": "2025-08-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3580.7213240522",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-12",
+                "End": "2025-08-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3585.9392307927",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-13",
+                "End": "2025-08-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3577.7381217994",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-14",
+                "End": "2025-08-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3596.5777242683",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-15",
+                "End": "2025-08-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3571.4503307486",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-16",
+                "End": "2025-08-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3263.5142466197",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-17",
+                "End": "2025-08-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3210.3875231723",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-18",
+                "End": "2025-08-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3475.3848706205",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-19",
+                "End": "2025-08-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3569.3311593131",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-20",
+                "End": "2025-08-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3476.8185938081",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-21",
+                "End": "2025-08-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3302.8731156947",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-22",
+                "End": "2025-08-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3428.2252907777",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-23",
+                "End": "2025-08-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3444.9151653841",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-24",
+                "End": "2025-08-25"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3436.0215392542",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-25",
+                "End": "2025-08-26"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3493.4362098982",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-26",
+                "End": "2025-08-27"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3606.7041301802",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-27",
+                "End": "2025-08-28"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3704.4342712152",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-28",
+                "End": "2025-08-29"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3741.0921461068",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-29",
+                "End": "2025-08-30"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3695.0649880899",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-30",
+                "End": "2025-08-31"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3633.2676261937",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-08-31",
+                "End": "2025-09-01"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3619.7799747238",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": false
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-01",
+                "End": "2025-09-02"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "4464.5532414618",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-02",
+                "End": "2025-09-03"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3809.8478621666",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-03",
+                "End": "2025-09-04"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3760.3155333919",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-04",
+                "End": "2025-09-05"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3724.8874135194",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-05",
+                "End": "2025-09-06"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3781.0147790318",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-06",
+                "End": "2025-09-07"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3757.8288823006",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-07",
+                "End": "2025-09-08"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3645.2622133836",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-08",
+                "End": "2025-09-09"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3733.34475814",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-09",
+                "End": "2025-09-10"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3869.1651344681",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-10",
+                "End": "2025-09-11"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3766.5225331443",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-11",
+                "End": "2025-09-12"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "4003.348587119",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-12",
+                "End": "2025-09-13"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "4090.0858543407",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-13",
+                "End": "2025-09-14"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3808.2198661257",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-14",
+                "End": "2025-09-15"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3762.23341776",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-15",
+                "End": "2025-09-16"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "3615.3401229163",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-16",
+                "End": "2025-09-17"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2936.2871761971",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-17",
+                "End": "2025-09-18"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2561.2972678513",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-18",
+                "End": "2025-09-19"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2756.9556105311",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-19",
+                "End": "2025-09-20"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2612.5863277489",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-20",
+                "End": "2025-09-21"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2277.6820834076",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-21",
+                "End": "2025-09-22"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2269.7776665551",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-22",
+                "End": "2025-09-23"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2439.2558014779",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        },
+        {
+            "TimePeriod": {
+                "Start": "2025-09-23",
+                "End": "2025-09-24"
+            },
+            "Total": {
+                "AmortizedCost": {
+                    "Amount": "2133.1199532634",
+                    "Unit": "USD"
+                }
+            },
+            "Groups": [],
+            "Estimated": true
+        }
+    ],
+    "DimensionValueAttributes": []
+}

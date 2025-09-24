@@ -1,0 +1,253 @@
+{
+  "analysis_type": "non_prod_environment_analysis",
+  "analysis_date": "2025-09-24T15:55:28.550209",
+  "data_period": {
+    "start": "2024-09-24",
+    "end": "2025-09-23",
+    "days": 365
+  },
+  "overall_metrics": {
+    "total_cost_12_months": 703611.8873860635,
+    "average_daily_cost": 1927.703801057708,
+    "environments_found": [
+      "environment$",
+      "environment$betler-bridge-nonprod",
+      "environment$ci",
+      "environment$dev01",
+      "environment$dev01-jurman",
+      "environment$load",
+      "environment$mig",
+      "environment$nonprod",
+      "environment$qa",
+      "environment$stage",
+      "environment$loadcrm",
+      "environment$loadhack",
+      "environment$temp",
+      "environment$tmp",
+      "environment$mig02",
+      "environment$loadgaming",
+      "environment$load2",
+      "environment$loadgame",
+      "environment$jermy",
+      "environment$mig02.betler",
+      "environment$mig.betler",
+      "environment$jerm2",
+      "environment$jerm2.betler",
+      "environment$betler-dev01",
+      "environment$load2.betler",
+      "environment$non-prod",
+      "environment$betler-qa",
+      "environment$betler-stage",
+      "environment$load1",
+      "environment$load1.betler",
+      "environment$betler-sep25",
+      "environment$sep25",
+      "environment$sep25.betler",
+      "environment$betler-load1",
+      "environment$load-25-39",
+      "environment$betler-load-25-39",
+      "environment$load-25-39.betler",
+      "environment$production"
+    ]
+  },
+  "predictions": {
+    "methodology": {
+      "persistent": "Linear regression based on historical growth trends",
+      "transient": "Monthly budget cap = max_historical_monthly_cost / 3"
+    },
+    "persistent": {
+      "model_type": "linear_regression_daily",
+      "model_r2": 0.6894510840732632,
+      "model_rmse": 42.272107207800104,
+      "daily_trend": 0.5977781085017281,
+      "current_daily_avg": 1106.02172150974,
+      "next_12_months_total": 435177.098453201,
+      "monthly_projection": [
+        {
+          "month": 1,
+          "cost": 32764.145699562454
+        },
+        {
+          "month": 2,
+          "cost": 33302.14599721401
+        },
+        {
+          "month": 3,
+          "cost": 34977.41673204286
+        },
+        {
+          "month": 4,
+          "cost": 34396.07993577217
+        },
+        {
+          "month": 5,
+          "cost": 36107.81513521962
+        },
+        {
+          "month": 6,
+          "cost": 35490.01387433033
+        },
+        {
+          "month": 7,
+          "cost": 36028.014171981886
+        },
+        {
+          "month": 8,
+          "cost": 37794.14717930301
+        },
+        {
+          "month": 9,
+          "cost": 37121.94811054005
+        },
+        {
+          "month": 10,
+          "cost": 38924.54558247978
+        },
+        {
+          "month": 11,
+          "cost": 38215.88204909821
+        },
+        {
+          "month": 12,
+          "cost": 40054.943985656544
+        }
+      ]
+    },
+    "transient": {
+      "model_type": "daily_budget_cap",
+      "max_historical_monthly": 73942.2263005466,
+      "daily_budget": 1600.0,
+      "monthly_budget_cap": 48640.0,
+      "reasoning": "$400/day per environment \u00d7 2-4 environments = $1600/day budget",
+      "note": "High variability area under active development - predictions should be revisited",
+      "next_12_months_total": 583680.0,
+      "monthly_projection": [
+        {
+          "month": 1,
+          "cost": 48640.0
+        },
+        {
+          "month": 2,
+          "cost": 48640.0
+        },
+        {
+          "month": 3,
+          "cost": 48640.0
+        },
+        {
+          "month": 4,
+          "cost": 48640.0
+        },
+        {
+          "month": 5,
+          "cost": 48640.0
+        },
+        {
+          "month": 6,
+          "cost": 48640.0
+        },
+        {
+          "month": 7,
+          "cost": 48640.0
+        },
+        {
+          "month": 8,
+          "cost": 48640.0
+        },
+        {
+          "month": 9,
+          "cost": 48640.0
+        },
+        {
+          "month": 10,
+          "cost": 48640.0
+        },
+        {
+          "month": 11,
+          "cost": 48640.0
+        },
+        {
+          "month": 12,
+          "cost": 48640.0
+        }
+      ]
+    },
+    "combined": {
+      "total_12_months": 1018857.098453201,
+      "monthly_projection": [
+        {
+          "month": 1,
+          "persistent_cost": 32764.145699562454,
+          "transient_cost": 48640.0,
+          "total_cost": 81404.14569956245
+        },
+        {
+          "month": 2,
+          "persistent_cost": 33302.14599721401,
+          "transient_cost": 48640.0,
+          "total_cost": 81942.14599721401
+        },
+        {
+          "month": 3,
+          "persistent_cost": 34977.41673204286,
+          "transient_cost": 48640.0,
+          "total_cost": 83617.41673204285
+        },
+        {
+          "month": 4,
+          "persistent_cost": 34396.07993577217,
+          "transient_cost": 48640.0,
+          "total_cost": 83036.07993577217
+        },
+        {
+          "month": 5,
+          "persistent_cost": 36107.81513521962,
+          "transient_cost": 48640.0,
+          "total_cost": 84747.81513521963
+        },
+        {
+          "month": 6,
+          "persistent_cost": 35490.01387433033,
+          "transient_cost": 48640.0,
+          "total_cost": 84130.01387433033
+        },
+        {
+          "month": 7,
+          "persistent_cost": 36028.014171981886,
+          "transient_cost": 48640.0,
+          "total_cost": 84668.0141719819
+        },
+        {
+          "month": 8,
+          "persistent_cost": 37794.14717930301,
+          "transient_cost": 48640.0,
+          "total_cost": 86434.147179303
+        },
+        {
+          "month": 9,
+          "persistent_cost": 37121.94811054005,
+          "transient_cost": 48640.0,
+          "total_cost": 85761.94811054005
+        },
+        {
+          "month": 10,
+          "persistent_cost": 38924.54558247978,
+          "transient_cost": 48640.0,
+          "total_cost": 87564.54558247978
+        },
+        {
+          "month": 11,
+          "persistent_cost": 38215.88204909821,
+          "transient_cost": 48640.0,
+          "total_cost": 86855.8820490982
+        },
+        {
+          "month": 12,
+          "persistent_cost": 40054.943985656544,
+          "transient_cost": 48640.0,
+          "total_cost": 88694.94398565654
+        }
+      ]
+    }
+  }
+}

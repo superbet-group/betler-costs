@@ -8,8 +8,8 @@ PID_FILE="${ENV_FILE}.pid"
 mkdir -p "$(dirname "$ENV_FILE")"
 rm -f "$ENV_FILE" "$PID_FILE"
 
-# Kill any existing AWS proxy processes
-pkill -f "tsh proxy aws" 2>/dev/null || true
+# Kill any existing AWS proxy processes for this specific app
+pkill -f "tsh proxy aws --app $APP_NAME" 2>/dev/null || true
 
 # Start proxy, save env vars + proxy PID
 {

@@ -10,14 +10,25 @@ set -euo pipefail
 # Start TSH proxies centrally (unless explicitly skipped)
 if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
     GRAFANA_TSH_PID=$(./start_tsh_grafana_proxy.sh)
+
+    # Start prod proxy for core and Cognito analysis
     AWS_RESULT=$(./start_tsh_aws_proxy.sh aws-betler-prod)
     AWS_TSH_PID=$(echo $AWS_RESULT | awk '{print $1}')
     AWS_ENV_FILE=$(echo $AWS_RESULT | awk '{print $2}')
 
-    # Wait briefly and check if AWS env file was created
+    # Start dev proxy for non-prod analysis
+    AWS_DEV_RESULT=$(./start_tsh_aws_proxy.sh aws-betler-dev)
+    AWS_DEV_TSH_PID=$(echo $AWS_DEV_RESULT | awk '{print $1}')
+    AWS_DEV_ENV_FILE=$(echo $AWS_DEV_RESULT | awk '{print $2}')
+
+    # Wait briefly and check if AWS env files were created
     sleep 2
     if [ ! -f "$AWS_ENV_FILE" ]; then
-        echo "Error: AWS TSH proxy failed - env file not created at $AWS_ENV_FILE" >&2
+        echo "Error: AWS TSH proxy failed for prod - env file not created at $AWS_ENV_FILE" >&2
+        exit 1
+    fi
+    if [ ! -f "$AWS_DEV_ENV_FILE" ]; then
+        echo "Error: AWS TSH proxy failed for dev - env file not created at $AWS_DEV_ENV_FILE" >&2
         exit 1
     fi
     echo ""
@@ -25,7 +36,7 @@ fi
 
 # Clean up all output directories and virtual environment
 echo "Cleaning up previous analysis results..."
-rm -rf betler_cost_analysis/output cognito_cost_analysis/output betler_predictive_analysis/output
+rm -rf betler_cost_analysis/output cognito_cost_analysis/output betler_predictive_analysis/output betler_non-prod_analysis/output
 rm -rf venv
 echo "Cleanup complete."
 echo ""
@@ -59,6 +70,16 @@ cd ..
 echo "Cognito analysis complete."
 echo ""
 
+# Run non-prod cost analysis with proxy skip
+echo "=========================================="
+echo "RUNNING NON-PROD COST ANALYSIS"
+echo "=========================================="
+cd betler_non-prod_analysis
+SKIP_TSH_PROXY=true ./core_betler_non_prod_cost_analysis.sh
+cd ..
+echo "Non-prod analysis complete."
+echo ""
+
 # Run predictive analysis
 echo "=========================================="
 echo "RUNNING PREDICTIVE COST ANALYSIS"
@@ -85,5 +106,8 @@ if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
     fi
     if [ ! -z "${AWS_TSH_PID:-}" ]; then
         kill $AWS_TSH_PID 2>/dev/null || true
+    fi
+    if [ ! -z "${AWS_DEV_TSH_PID:-}" ]; then
+        kill $AWS_DEV_TSH_PID 2>/dev/null || true
     fi
 fi
