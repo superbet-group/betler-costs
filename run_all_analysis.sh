@@ -6,103 +6,37 @@
 # Enable strict error handling
 set -euo pipefail
 
-echo "=========================================="
-echo "BETLER COST ANALYSIS - MASTER SCRIPT"
-echo "=========================================="
-echo "This script will:"
-echo "1. Start TSH proxy for Grafana access"
-echo "2. Clean up all previous output directories"
-echo "3. Run core Betler cost analysis"
-echo "4. Run Cognito cost analysis"
-echo "5. Clean up TSH proxy"
-echo ""
 
-# Start TSH proxy centrally (unless explicitly skipped)
+# Start TSH proxies centrally (unless explicitly skipped)
 if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
-    echo "Starting TSH proxy for Grafana access..."
-    tsh proxy app grafana --port=8080 &
-    TSH_PID=$!
-    echo "TSH proxy started (PID: $TSH_PID)"
+    GRAFANA_TSH_PID=$(./start_tsh_grafana_proxy.sh)
+    AWS_RESULT=$(./start_tsh_aws_proxy.sh aws-betler-prod)
+    AWS_TSH_PID=$(echo $AWS_RESULT | awk '{print $1}')
+    AWS_ENV_FILE=$(echo $AWS_RESULT | awk '{print $2}')
 
-    # Give proxy a moment to start
+    # Wait briefly and check if AWS env file was created
     sleep 2
-
-    # Test if proxy is working
-    if ! curl -s http://localhost:8080 > /dev/null 2>&1; then
-        echo "Error: TSH proxy failed to start properly"
-        kill $TSH_PID 2>/dev/null || true
+    if [ ! -f "$AWS_ENV_FILE" ]; then
+        echo "Error: AWS TSH proxy failed - env file not created at $AWS_ENV_FILE" >&2
         exit 1
     fi
-
     echo ""
 fi
 
-# Clean up all output directories and virtual environments
+# Clean up all output directories and virtual environment
 echo "Cleaning up previous analysis results..."
-if [ -d "betler_cost_analysis/output" ]; then
-    echo "  - Removing betler_cost_analysis/output/"
-    rm -rf betler_cost_analysis/output
-fi
-
-if [ -d "cognito_cost_analysis/output" ]; then
-    echo "  - Removing cognito_cost_analysis/output/"
-    rm -rf cognito_cost_analysis/output
-fi
-
-if [ -d "betler_predictive_analysis/output" ]; then
-    echo "  - Removing betler_predictive_analysis/output/"
-    rm -rf betler_predictive_analysis/output
-fi
-
-if [ -d "betler_cost_analysis/venv" ]; then
-    echo "  - Removing betler_cost_analysis/venv/"
-    rm -rf betler_cost_analysis/venv
-fi
-
-if [ -d "cognito_cost_analysis/venv" ]; then
-    echo "  - Removing cognito_cost_analysis/venv/"
-    rm -rf cognito_cost_analysis/venv
-fi
-
-if [ -d "betler_predictive_analysis/venv" ]; then
-    echo "  - Removing betler_predictive_analysis/venv/"
-    rm -rf betler_predictive_analysis/venv
-fi
-
+rm -rf betler_cost_analysis/output cognito_cost_analysis/output betler_predictive_analysis/output
+rm -rf venv
 echo "Cleanup complete."
 echo ""
 
-# Set up centralized Python virtual environments
-echo "Setting up Python virtual environments..."
-
-# Core analysis venv
-echo "  - Setting up betler_cost_analysis virtual environment..."
-cd betler_cost_analysis
+# Set up shared Python virtual environment
+echo "Setting up shared Python virtual environment..."
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt > /dev/null 2>&1
 deactivate
-cd ..
-
-# Cognito analysis venv
-echo "  - Setting up cognito_cost_analysis virtual environment..."
-cd cognito_cost_analysis
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt > /dev/null 2>&1
-deactivate
-cd ..
-
-# Predictive analysis venv
-echo "  - Setting up betler_predictive_analysis virtual environment..."
-cd betler_predictive_analysis
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt > /dev/null 2>&1
-deactivate
-cd ..
-
-echo "Virtual environments ready."
+echo "Shared virtual environment ready."
 echo ""
 
 # Run core Betler cost analysis with proxy skip
@@ -131,28 +65,31 @@ echo "RUNNING PREDICTIVE COST ANALYSIS"
 echo "=========================================="
 cd betler_predictive_analysis
 
-# Activate the pre-configured virtual environment
-source venv/bin/activate
-
-# Run predictive analysis with default parameters
+# Run predictive analysis with default parameters using shared venv
 echo "Running predictive cost analysis..."
-python predictive_cost_analysis.py
+../venv/bin/python predictive_cost_analysis.py
 
 echo "Running extended 24-month dashboard..."
-python extended_dashboard.py
-
-deactivate
+../venv/bin/python extended_dashboard.py
 
 echo "✓ Predictive cost analysis complete"
 cd ..
+
+# Generate final clean summary
+echo "==========================================="
+echo "GENERATING FINAL SUMMARY"
+echo "==========================================="
+./venv/bin/python generate_final_summary.py
 echo ""
 
-# Clean up TSH proxy (only if we started it)
-if [ "${SKIP_TSH_PROXY:-false}" != "true" ] && [ ! -z "${TSH_PID:-}" ]; then
-    echo "Stopping TSH proxy..."
-    kill $TSH_PID 2>/dev/null || true
-    echo "TSH proxy stopped."
-    echo ""
+# Clean up TSH proxies (only if we started them)
+if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
+    if [ ! -z "${GRAFANA_TSH_PID:-}" ]; then
+        kill $GRAFANA_TSH_PID 2>/dev/null || true
+    fi
+    if [ ! -z "${AWS_TSH_PID:-}" ]; then
+        kill $AWS_TSH_PID 2>/dev/null || true
+    fi
 fi
 
 echo "=========================================="

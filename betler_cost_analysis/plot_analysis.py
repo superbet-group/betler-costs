@@ -28,7 +28,9 @@ def load_and_prepare_data():
         # Remove rows with missing data for cleaner plots
         df_clean = df.dropna()
 
-        print(f"Loaded {len(df)} total rows, {len(df_clean)} rows with complete data (outliers excluded)")
+        # Data validation
+        if len(df_clean) < 300:
+            print(f"⚠ Warning: Limited clean data ({len(df_clean)} rows) - visualizations may be incomplete")
         return df, df_clean
     except FileNotFoundError:
         print("Error: cost_analysis.csv not found. Please run the main analysis script first.")
@@ -224,76 +226,35 @@ def create_plots(df, df_clean):
         os.makedirs(output_dir)
 
     plt.savefig(f'{output_dir}/cost_analysis_dashboard.png', dpi=300, bbox_inches='tight')
-    print(f"Dashboard saved as: {output_dir}/cost_analysis_dashboard.png")
+    print("✓ Core dashboard created")
 
     return fig
 
 def create_summary_stats(df, df_clean):
-    """Generate and save summary statistics"""
+    """Generate key validation statistics"""
 
-    print("\n" + "="*60)
-    print("COST ANALYSIS SUMMARY STATISTICS")
-    print("="*60)
-
-    # Date range
-    print(f"Data Period: {df['date'].min().strftime('%Y-%m-%d')} to {df['date'].max().strftime('%Y-%m-%d')}")
-    print(f"Total Days: {len(df)}")
-    print(f"Days with Complete Data: {len(df_clean)}")
-
-    # Transaction volume stats
-    if not df['transaction_volume'].isna().all():
-        trans_data = df['transaction_volume'].dropna()
-        print(f"\nTransaction Volume:")
-        print(f"  Average: {trans_data.mean():,.0f} transactions/day")
-        print(f"  Median:  {trans_data.median():,.0f} transactions/day")
-        print(f"  Min:     {trans_data.min():,.0f} transactions/day")
-        print(f"  Max:     {trans_data.max():,.0f} transactions/day")
-        print(f"  Growth:  {((trans_data.iloc[-1] / trans_data.iloc[0]) - 1) * 100:.1f}% over period")
-
-    # Customer volume stats
-    if not df['customer_volume'].isna().all():
-        cust_data = df['customer_volume'].dropna()
-        print(f"\nCustomer Volume:")
-        print(f"  Average: {cust_data.mean():,.0f}")
-        print(f"  Median:  {cust_data.median():,.0f}")
-        print(f"  Min:     {cust_data.min():,.0f}")
-        print(f"  Max:     {cust_data.max():,.0f}")
-        print(f"  Growth:  {((cust_data.iloc[-1] / cust_data.iloc[0]) - 1) * 100:.1f}% over period")
-
-    # Cost stats
+    # Data validation checks
     if len(df_clean) > 0:
         cost_data = df_clean['aws_cost']
-        print(f"\nAWS Daily Costs:")
-        print(f"  Average: ${cost_data.mean():,.2f}/day")
-        print(f"  Median:  ${cost_data.median():,.2f}/day")
-        print(f"  Min:     ${cost_data.min():,.2f}/day")
-        print(f"  Max:     ${cost_data.max():,.2f}/day")
-        print(f"  Total:   ${cost_data.sum():,.2f} (for {len(cost_data)} days)")
+        total_cost = cost_data.sum()
 
-        # Monthly and yearly projections
-        monthly_avg = cost_data.mean() * 30
-        yearly_avg = cost_data.mean() * 365
-        print(f"  Monthly Projection: ${monthly_avg:,.2f}/month")
-        print(f"  Yearly Projection: ${yearly_avg:,.2f}/year")
+        # Key validation: ensure we have reasonable cost data
+        print(f"✓ Core data: ${total_cost:,.0f} total cost over {len(df_clean)} days")
+
+        # Warning checks
+        if cost_data.mean() < 1000:
+            print("⚠ Warning: Average daily cost unusually low - check data quality")
+        if cost_data.max() > 50000:
+            print("⚠ Warning: Daily cost spike detected - may affect predictions")
+    else:
+        print("⚠ Error: No valid cost data found")
 
 
 def main():
     """Main execution function"""
-    print("Loading data...")
     df, df_clean = load_and_prepare_data()
-
-    print("Creating visualization dashboard...")
     fig = create_plots(df, df_clean)
-
-    print("Generating summary statistics...")
     create_summary_stats(df, df_clean)
-
-    print("\n" + "="*60)
-    print("VISUALIZATION COMPLETE")
-    print("="*60)
-    print("Files created:")
-    print("  - output/cost_analysis_dashboard.png")
-    print("\nAnalysis shows platform growth trends and cost correlations.")
 
 if __name__ == "__main__":
     main()

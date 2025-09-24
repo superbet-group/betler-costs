@@ -95,15 +95,15 @@ echo "Total AWS Cognito cost for last 12 months: \$$(printf "%.2f" $TOTAL_COGNIT
 
 # Merge all monthly data into a single CSV file using Python
 echo "Merging monthly data into CSV..."
-venv/bin/python merge_monthly_data.py
+../venv/bin/python merge_monthly_data.py
 
 # Run Cognito cost prediction analysis
 echo "Running Cognito cost prediction analysis..."
-venv/bin/python cognito_cost_prediction.py
+../venv/bin/python cognito_cost_prediction.py
 
 # Create Cognito visualization dashboard
 echo "Creating Cognito visualization dashboard..."
-venv/bin/python plot_cognito_analysis.py
+../venv/bin/python plot_cognito_analysis.py
 
 # Terminate the background process if it was started
 if [ "${SKIP_TSH_PROXY}" != "true" ]; then

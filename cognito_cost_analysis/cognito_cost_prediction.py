@@ -118,64 +118,30 @@ def main():
 
     hybrid_predictions = np.array(hybrid_predictions)
 
-    # Display results
-    print("\n" + "="*60)
-    print("COGNITO COST REGRESSION RESULTS (HYBRID MODEL)")
-    print("="*60)
-    print("Model Strategy:")
-    print("- Trained on pre-optimization data for stable cost relationships")
-    print("- Pre-July 2025: Use base model predictions")
-    print(f"- July 2025+: Apply {optimization_factor:.1f} multiplier (60% cost reduction)")
-    print("- Uses predictable business metrics (customers, transactions)")
-    print()
-    print(f"Base Model: Cognito_Cost = {intercept:.2f} + {coefficients[0]:.8f} * Transactions + {coefficients[1]:.4f} * Customers")
-    print(f"Post-July 2025: Predicted_Cost = Base_Cost * {optimization_factor:.1f}")
-    print(f"Training R-squared: {r_squared_train:.4f} ({r_squared_train*100:.2f}% of pre-optimization variance explained)")
-
     # Calculate statistics for hybrid predictions vs actual data
     y_actual = np.array(cognito_costs)
     residuals = y_actual - hybrid_predictions
     rmse = np.sqrt(np.mean(residuals**2))
     mean_cost = np.mean(y_actual)
 
-    print(f"\nHybrid Model Performance (All Data):")
-    print(f"Root Mean Square Error: ${rmse:,.2f}")
-    print(f"Mean Actual Cognito Cost: ${mean_cost:,.2f}")
-    print(f"RMSE as % of mean: {(rmse/mean_cost)*100:.2f}%")
+    # Minimal validation output
+    print(f"✓ Cognito model: R² = {r_squared_train:.3f}, RMSE = ${rmse:,.0f} ({(rmse/mean_cost)*100:.1f}% of mean)")
 
-    # Show predictions vs actual with optimization indicator
-    print(f"\nMonthly Predictions vs Actual (Hybrid Model):")
-    print("Month\t\tActual\t\tPredicted\tDifference\tPeriod")
-    print("-" * 80)
-    for i in range(len(months)):
-        actual = y_actual[i]
-        predicted = hybrid_predictions[i]
-        diff = actual - predicted
-        period = "Pre-opt" if months[i] < '2025-07' else "Post-opt"
-        print(f"{months[i]}\t${actual:,.2f}\t${predicted:,.2f}\t${diff:,.2f}\t{period}")
+    # Data validation checks
+    if r_squared_train < 0.7:
+        print(f"⚠ Warning: Low Cognito R² ({r_squared_train:.3f}) - model may not be reliable")
+    if len(pre_opt_months) < 6:
+        print(f"⚠ Warning: Limited pre-optimization data ({len(pre_opt_months)} months)")
 
-    # Example predictions (using optimized model)
-    print(f"\n" + "="*60)
-    print("EXAMPLE COGNITO COST PREDICTIONS (POST-OPTIMIZATION)")
-    print("="*60)
-
-    # Use recent values as baseline
-    recent_transactions = transaction_volumes[-1]
-    recent_customers = customer_volumes[-1]
-
-    scenarios = [
-        ("Current levels", recent_transactions, recent_customers),
-        ("10% more transactions", recent_transactions * 1.1, recent_customers),
-        ("10% more customers", recent_transactions, recent_customers * 1.1),
-        ("10% growth in both", recent_transactions * 1.1, recent_customers * 1.1),
-        ("20% growth in both", recent_transactions * 1.2, recent_customers * 1.2),
-    ]
-
-    print("Future predictions use post-optimization factor (60% cost reduction):")
-    for scenario_name, trans_vol, cust_vol in scenarios:
-        base_cost = intercept + coefficients[0] * trans_vol + coefficients[1] * cust_vol
-        post_opt_cost = base_cost * optimization_factor
-        print(f"{scenario_name:20}: ${post_opt_cost:,.2f} (base: ${base_cost:,.2f})")
+    # Check for cost optimization effectiveness
+    recent_costs = [cognito_costs[i] for i in range(len(months)) if months[i] >= '2025-07']
+    if recent_costs and len(recent_costs) >= 2:
+        avg_recent = np.mean(recent_costs)
+        pre_opt_costs = [cognito_costs[i] for i in range(len(months)) if months[i] < '2025-07']
+        if pre_opt_costs:
+            avg_pre = np.mean(pre_opt_costs[-3:])  # Last 3 pre-opt months
+            reduction = ((avg_pre - avg_recent) / avg_pre) * 100
+            print(f"✓ Cost optimization: {reduction:.0f}% reduction detected")
 
 
     # Save regression model as JSON for predictive analysis
@@ -212,7 +178,7 @@ def main():
     with open('output/cognito_regression_model.json', 'w') as f:
         json.dump(model_json, f, indent=2)
 
-    print(f"Regression model saved to: output/cognito_regression_model.json")
+    # Silent save
 
 if __name__ == "__main__":
     main()

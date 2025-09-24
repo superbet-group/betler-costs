@@ -100,15 +100,15 @@ echo "Total AWS cost for last 12 months (excluding tax and Cognito): \$$(printf 
 
 # Merge all data into a single CSV file using Python
 echo "Merging data into CSV..."
-venv/bin/python merge_data.py
+../venv/bin/python merge_data.py
 
 # Run cost prediction analysis
 echo "Running cost prediction analysis..."
-venv/bin/python cost_prediction.py
+../venv/bin/python cost_prediction.py
 
 # Create visualization dashboard
 echo "Creating visualization dashboard..."
-venv/bin/python plot_analysis.py
+../venv/bin/python plot_analysis.py
 
 # Terminate the background process if it was started
 if [ "${SKIP_TSH_PROXY}" != "true" ]; then

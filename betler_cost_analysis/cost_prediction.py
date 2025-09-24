@@ -92,56 +92,19 @@ def main():
         print("\nPerforming multiple linear regression...")
         coefficients, intercept, r_squared, predictions = multiple_linear_regression(X, y)
 
-        # Display results
-        print("\n" + "="*50)
-        print("LINEAR REGRESSION RESULTS")
-        print("="*50)
-        print(f"Equation: Cost = {intercept:.4f} + {coefficients[0]:.8f} * Transaction_Volume + {coefficients[1]:.4f} * Customer_Volume")
-        print(f"R-squared: {r_squared:.4f} ({r_squared*100:.2f}% of variance explained)")
-        print(f"Intercept: ${intercept:,.2f}")
-        print(f"Transaction Volume Coefficient: ${coefficients[0]:.8f} per transaction")
-        print(f"Customer Volume Coefficient: ${coefficients[1]:.4f} per customer unit")
-
-        # Calculate some statistics
+        # Calculate some statistics for validation
         residuals = y - predictions
         rmse = np.sqrt(np.mean(residuals**2))
         mean_cost = np.mean(y)
 
-        print(f"\nModel Performance:")
-        print(f"Root Mean Square Error: ${rmse:,.2f}")
-        print(f"Mean Actual Cost: ${mean_cost:,.2f}")
-        print(f"RMSE as % of mean: {(rmse/mean_cost)*100:.2f}%")
+        # Minimal output - just key validation
+        print(f"✓ Core model: R² = {r_squared:.3f}, RMSE = ${rmse:,.0f} ({(rmse/mean_cost)*100:.1f}% of mean)")
 
-        # Show some predictions vs actual
-        print(f"\nSample Predictions (last 5 data points):")
-        print("Date\t\tActual\t\tPredicted\tDifference")
-        print("-" * 60)
-        for i in range(max(0, len(dates)-5), len(dates)):
-            actual = y[i]
-            predicted = predictions[i]
-            diff = actual - predicted
-            print(f"{dates[i]}\t${actual:,.2f}\t${predicted:,.2f}\t${diff:,.2f}")
-
-        # Example predictions
-        print(f"\n" + "="*50)
-        print("EXAMPLE PREDICTIONS")
-        print("="*50)
-
-        # Use recent values as baseline
-        recent_transactions = transaction_volumes[-1]
-        recent_customers = customer_volumes[-1]
-
-        scenarios = [
-            ("Current levels", recent_transactions, recent_customers),
-            ("10% more transactions", recent_transactions * 1.1, recent_customers),
-            ("10% more customers", recent_transactions, recent_customers * 1.1),
-            ("10% growth in both", recent_transactions * 1.1, recent_customers * 1.1),
-            ("20% growth in both", recent_transactions * 1.2, recent_customers * 1.2),
-        ]
-
-        for scenario_name, trans_vol, cust_vol in scenarios:
-            predicted_cost = predict_cost(trans_vol, cust_vol, coefficients, intercept)
-            print(f"{scenario_name:20s}: ${predicted_cost:,.2f}")
+        # Data validation check
+        if r_squared < 0.7:
+            print(f"⚠ Warning: Low R² ({r_squared:.3f}) - model may not be reliable")
+        if len(dates) < 300:
+            print(f"⚠ Warning: Limited data ({len(dates)} points) - predictions may be less accurate")
 
 
         # Save regression model as JSON for predictive analysis
@@ -177,7 +140,7 @@ def main():
         with open('output/core_regression_model.json', 'w') as f:
             json.dump(model_json, f, indent=2)
 
-        print(f"Regression model saved to: output/core_regression_model.json")
+        # Silent save
 
     except Exception as e:
         print(f"Error: {e}")

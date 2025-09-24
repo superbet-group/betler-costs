@@ -20,7 +20,7 @@ def load_existing_analysis_data():
         if os.path.exists(core_csv_path):
             core_df = pd.read_csv(core_csv_path)
             core_data['df'] = core_df
-            print(f"Loaded core analysis data: {len(core_df)} records")
+            # Silent load
         else:
             print("Warning: Core analysis data not found. Run core analysis first.")
     except Exception as e:
@@ -33,7 +33,7 @@ def load_existing_analysis_data():
         if os.path.exists(cognito_csv_path):
             cognito_df = pd.read_csv(cognito_csv_path)
             cognito_data['df'] = cognito_df
-            print(f"Loaded Cognito analysis data: {len(cognito_df)} records")
+            # Silent load
         else:
             print("Warning: Cognito analysis data not found. Run Cognito analysis first.")
     except Exception as e:
@@ -51,7 +51,7 @@ def load_prediction_models():
         if os.path.exists(core_model_path):
             with open(core_model_path, 'r') as f:
                 models['core'] = json.load(f)
-            print(f"Loaded core model: R² = {models['core']['model']['r_squared']:.4f}")
+            # Silent load
         else:
             print("Warning: Core prediction model not found. Run core analysis first.")
     except Exception as e:
@@ -63,7 +63,7 @@ def load_prediction_models():
         if os.path.exists(cognito_model_path):
             with open(cognito_model_path, 'r') as f:
                 models['cognito'] = json.load(f)
-            print(f"Loaded Cognito model: R² = {models['cognito']['base_model']['r_squared']:.4f}")
+            # Silent load
         else:
             print("Warning: Cognito prediction model not found. Run Cognito analysis first.")
     except Exception as e:
@@ -370,16 +370,7 @@ def main():
 
     args = parser.parse_args()
 
-    print("=" * 60)
-    print("BETLER PREDICTIVE COST ANALYSIS")
-    print("=" * 60)
-    print(f"Customer Growth Rate: {args.customer_growth*100:.1f}% per month")
-    print(f"Transaction Growth Rate: {args.transaction_growth*100:.1f}% per month")
-    print(f"Projection Period: {args.months} months")
-    print("")
-
     # Load existing analysis data
-    print("Loading existing analysis data...")
     core_data, cognito_data = load_existing_analysis_data()
 
     if not core_data and not cognito_data:
@@ -387,7 +378,6 @@ def main():
         sys.exit(1)
 
     # Load prediction models
-    print("Loading prediction models...")
     models = load_prediction_models()
 
     if not models:
@@ -395,18 +385,13 @@ def main():
         sys.exit(1)
 
     # Extract baseline metrics
-    print("Extracting baseline metrics...")
     baseline = extract_latest_metrics(core_data, cognito_data)
 
     if not baseline:
         print("Error: Could not extract baseline metrics from analysis data.")
         sys.exit(1)
 
-    print(f"Baseline: {baseline.get('monthly_customers', 0):,.0f} customers, "
-          f"{baseline.get('monthly_transactions', 0):,.0f} transactions/month")
-
     # Generate projections
-    print("Generating cost projections...")
     projections = generate_future_projections(
         baseline,
         models,
@@ -419,31 +404,13 @@ def main():
     output_dir = 'output'
     os.makedirs(output_dir, exist_ok=True)
 
-    # Create dashboard
-    print("Creating predictive dashboard...")
-    create_predictive_dashboard(baseline, projections, output_dir)
-
-    # Save projections
-    print("Saving projection data...")
+    # Save data and create summary report
     save_projections_csv(projections, baseline, output_dir)
-
-    # Create summary report
-    print("Generating summary report...")
     create_summary_report(baseline, projections, output_dir)
 
-    print("\n" + "=" * 60)
-    print("PREDICTIVE ANALYSIS COMPLETE")
-    print("=" * 60)
-    print("Files created:")
-    print(f"  - {output_dir}/predictive_cost_dashboard.png")
-    print(f"  - {output_dir}/predictive_cost_analysis.csv")
-    print(f"  - {output_dir}/predictive_analysis_summary.txt")
-    print("")
-    print("Key Predictions:")
-    annual_total = sum([p['predicted_total_cost'] for p in projections[:12]])
-    print(f"  Annual Cost Projection: ${annual_total:,.2f}")
-    final_customers = projections[11]['projected_customers'] if len(projections) >= 12 else projections[-1]['projected_customers']
-    print(f"  Year-End Customers: {final_customers:,.0f}")
+    # Key validation
+    annual_total = sum([p['predicted_total_cost'] for p in projections]) if projections else 0
+    print(f"✓ Predictive model: {args.months} months, ${annual_total:,.0f} total projection")
 
 if __name__ == "__main__":
     main()

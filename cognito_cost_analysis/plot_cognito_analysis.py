@@ -212,76 +212,35 @@ def create_monthly_plots(df, df_clean):
         os.makedirs(output_dir)
 
     plt.savefig(f'{output_dir}/cognito_cost_analysis_dashboard.png', dpi=300, bbox_inches='tight')
-    print(f"Cognito dashboard saved as: {output_dir}/cognito_cost_analysis_dashboard.png")
+    print("✓ Cognito dashboard created")
 
     return fig
 
 def create_summary_stats(df, df_clean):
-    """Generate and save summary statistics"""
+    """Generate key validation statistics"""
 
-    print("\\n" + "="*60)
-    print("COGNITO COST ANALYSIS SUMMARY STATISTICS")
-    print("="*60)
-
-    # Date range
-    print(f"Data Period: {df['month'].min()} to {df['month'].max()}")
-    print(f"Total Months: {len(df)}")
-    print(f"Months with Complete Data: {len(df_clean)}")
-
-    # Transaction volume stats
-    if not df['monthly_transaction_volume'].isna().all():
-        trans_data = df['monthly_transaction_volume'].dropna()
-        print(f"\\nMonthly Transaction Volume:")
-        print(f"  Average: {trans_data.mean():,.0f} transactions/month")
-        print(f"  Median:  {trans_data.median():,.0f} transactions/month")
-        print(f"  Min:     {trans_data.min():,.0f} transactions/month")
-        print(f"  Max:     {trans_data.max():,.0f} transactions/month")
-        if len(trans_data) > 1:
-            print(f"  Growth:  {((trans_data.iloc[-1] / trans_data.iloc[0]) - 1) * 100:.1f}% over period")
-
-    # Customer volume stats
-    if not df['monthly_customer_volume'].isna().all():
-        cust_data = df['monthly_customer_volume'].dropna()
-        print(f"\\nMonthly Customer Volume:")
-        print(f"  Average: {cust_data.mean():,.0f}")
-        print(f"  Median:  {cust_data.median():,.0f}")
-        print(f"  Min:     {cust_data.min():,.0f}")
-        print(f"  Max:     {cust_data.max():,.0f}")
-        if len(cust_data) > 1:
-            print(f"  Growth:  {((cust_data.iloc[-1] / cust_data.iloc[0]) - 1) * 100:.1f}% over period")
-
-    # Cognito cost stats
+    # Data validation checks
     if len(df_clean) > 0:
         cost_data = df_clean['cognito_cost']
-        print(f"\\nMonthly Cognito Costs:")
-        print(f"  Average: ${cost_data.mean():,.2f}/month")
-        print(f"  Median:  ${cost_data.median():,.2f}/month")
-        print(f"  Min:     ${cost_data.min():,.2f}/month")
-        print(f"  Max:     ${cost_data.max():,.2f}/month")
-        print(f"  Total:   ${cost_data.sum():,.2f} (for {len(cost_data)} months)")
+        total_cost = cost_data.sum()
 
-        # Annual projection
-        annual_avg = cost_data.mean() * 12
-        print(f"  Annual Projection: ${annual_avg:,.2f}/year")
+        # Key validation: ensure we have reasonable cost data
+        print(f"✓ Cognito data: ${total_cost:,.0f} total cost over {len(df_clean)} months")
+
+        # Warning checks
+        if cost_data.mean() < 5000:
+            print("⚠ Warning: Average monthly Cognito cost unusually low - check data quality")
+        if cost_data.max() > 100000:
+            print("⚠ Warning: Monthly Cognito cost spike detected - may affect predictions")
+    else:
+        print("⚠ Error: No valid Cognito cost data found")
 
 
 def main():
     """Main execution function"""
-    print("Loading monthly data...")
     df, df_clean = load_and_prepare_monthly_data()
-
-    print("Creating visualization dashboard...")
     fig = create_monthly_plots(df, df_clean)
-
-    print("Generating summary statistics...")
     create_summary_stats(df, df_clean)
-
-    print("\\n" + "="*60)
-    print("COGNITO VISUALIZATION COMPLETE")
-    print("="*60)
-    print("Files created:")
-    print("  - output/cognito_cost_analysis_dashboard.png")
-    print("\\nAnalysis shows monthly Cognito cost patterns and correlations.")
 
 if __name__ == "__main__":
     main()

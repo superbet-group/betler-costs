@@ -1,0 +1,318 @@
+
+Cleaning up previous analysis results...
+Cleanup complete.
+
+Setting up shared Python virtual environment...
+Shared virtual environment ready.
+
+==========================================
+RUNNING CORE BETLER COST ANALYSIS
+==========================================
+Latest date: 2025-09-23
+Latest transaction volume: 119905793.9562348
+Latest customer volume: 12599674
+
+Fetching AWS costs for account 493638924148...
+Total AWS cost for last 12 months (excluding tax and Cognito): $3895066.29
+Merging data into CSV...
+CSV file created with 365 rows
+Columns: date, transaction_volume, customer_volume, aws_cost
+Running cost prediction analysis...
+Loading CSV data...
+Loaded 363 data points
+
+Performing multiple linear regression...
+
+==================================================
+LINEAR REGRESSION RESULTS
+==================================================
+Equation: Cost = -6412.1405 + 0.00001912 * Transaction_Volume + 0.0016 * Customer_Volume
+R-squared: 0.8792 (87.92% of variance explained)
+Intercept: $-6,412.14
+Transaction Volume Coefficient: $0.00001912 per transaction
+Customer Volume Coefficient: $0.0016 per customer unit
+
+Model Performance:
+Root Mean Square Error: $871.73
+Mean Actual Cost: $10,712.71
+RMSE as % of mean: 8.14%
+
+Sample Predictions (last 5 data points):
+Date		Actual		Predicted	Difference
+------------------------------------------------------------
+2025-09-19	$17,625.28	$15,620.23	$2,005.05
+2025-09-20	$18,759.97	$15,898.32	$2,861.65
+2025-09-21	$19,097.59	$15,771.00	$3,326.59
+2025-09-22	$15,762.41	$15,731.35	$31.06
+2025-09-23	$12,679.13	$15,432.44	$-2,753.31
+
+==================================================
+EXAMPLE PREDICTIONS
+==================================================
+Current levels      : $15,432.44
+10% more transactions: $15,661.75
+10% more customers  : $17,387.59
+10% growth in both  : $17,616.90
+20% growth in both  : $19,801.35
+Regression model saved to: output/core_regression_model.json
+Creating visualization dashboard...
+Loading data...
+Loaded 363 total rows, 363 rows with complete data (outliers excluded)
+Creating visualization dashboard...
+Dashboard saved as: output/cost_analysis_dashboard.png
+Generating summary statistics...
+
+============================================================
+COST ANALYSIS SUMMARY STATISTICS
+============================================================
+Data Period: 2024-09-24 to 2025-09-23
+Total Days: 363
+Days with Complete Data: 363
+
+Transaction Volume:
+  Average: 97,598,741 transactions/day
+  Median:  96,374,589 transactions/day
+  Min:     27,069,708 transactions/day
+  Max:     153,556,671 transactions/day
+  Growth:  343.0% over period
+
+Customer Volume:
+  Average: 9,833,030
+  Median:  9,861,719
+  Min:     7,083,422
+  Max:     12,599,674
+  Growth:  77.9% over period
+
+AWS Daily Costs:
+  Average: $10,712.71/day
+  Median:  $10,320.92/day
+  Min:     $6,547.46/day
+  Max:     $19,097.59/day
+  Total:   $3,888,712.84 (for 363 days)
+  Monthly Projection: $321,381.23/month
+  Yearly Projection: $3,910,138.25/year
+
+============================================================
+VISUALIZATION COMPLETE
+============================================================
+Files created:
+  - output/cost_analysis_dashboard.png
+
+Analysis shows platform growth trends and cost correlations.
+Core analysis complete.
+
+==========================================
+RUNNING COGNITO COST ANALYSIS
+==========================================
+Latest date: 2025-09
+Latest daily transaction volume: 119905793.9562348
+Latest daily customer volume: 12599674
+
+Fetching Amazon Cognito costs for account 493638924148...
+Total AWS Cognito cost for last 12 months: $284680.31
+Merging monthly data into CSV...
+Monthly CSV file created with 13 rows
+Columns: month, monthly_transaction_volume, monthly_customer_volume, cognito_cost
+Data aggregation: transactions=sum(daily), customers=last(daily), costs=monthly
+Running Cognito cost prediction analysis...
+Loading monthly CSV data...
+Loaded 12 total monthly data points
+Pre-optimization training data: 10 months (before 2025-07)
+Optimization factor: 0.40 (post-optimization costs)
+
+Training model on pre-optimization data for stable cost relationships...
+
+============================================================
+COGNITO COST REGRESSION RESULTS (HYBRID MODEL)
+============================================================
+Model Strategy:
+- Trained on pre-optimization data for stable cost relationships
+- Pre-July 2025: Use base model predictions
+- July 2025+: Apply 0.4 multiplier (60% cost reduction)
+- Uses predictable business metrics (customers, transactions)
+
+Base Model: Cognito_Cost = -50519.90 + -0.00000025 * Transactions + 0.0082 * Customers
+Post-July 2025: Predicted_Cost = Base_Cost * 0.4
+Training R-squared: 0.8668 (86.68% of pre-optimization variance explained)
+
+Hybrid Model Performance (All Data):
+Root Mean Square Error: $3,199.88
+Mean Actual Cognito Cost: $23,723.36
+RMSE as % of mean: 13.49%
+
+Monthly Predictions vs Actual (Hybrid Model):
+Month		Actual		Predicted	Difference	Period
+--------------------------------------------------------------------------------
+2024-09	$8,824.74	$8,446.48	$378.25	Pre-opt
+2024-10	$8,858.47	$13,126.88	$-4,268.41	Pre-opt
+2024-11	$17,416.78	$18,516.37	$-1,099.59	Pre-opt
+2024-12	$29,654.88	$22,701.44	$6,953.44	Pre-opt
+2025-01	$28,621.21	$25,370.09	$3,251.12	Pre-opt
+2025-02	$28,134.17	$27,351.46	$782.71	Pre-opt
+2025-03	$28,890.74	$30,029.25	$-1,138.51	Pre-opt
+2025-04	$29,196.35	$32,616.68	$-3,420.34	Pre-opt
+2025-05	$30,271.94	$34,804.76	$-4,532.82	Pre-opt
+2025-06	$40,250.23	$37,156.08	$3,094.15	Pre-opt
+2025-07	$15,906.69	$15,933.81	$-27.12	Post-opt
+2025-08	$18,654.12	$19,460.72	$-806.61	Post-opt
+
+============================================================
+EXAMPLE COGNITO COST PREDICTIONS (POST-OPTIMIZATION)
+============================================================
+Future predictions use post-optimization factor (60% cost reduction):
+Current levels      : $19,460.72 (base: $48,651.80)
+10% more transactions: $19,387.42 (base: $48,468.56)
+10% more customers  : $23,500.89 (base: $58,752.22)
+10% growth in both  : $23,427.59 (base: $58,568.97)
+20% growth in both  : $27,394.46 (base: $68,486.14)
+Regression model saved to: output/cognito_regression_model.json
+Creating Cognito visualization dashboard...
+Loading monthly data...
+Loaded 13 total months, 12 months with complete data
+Creating visualization dashboard...
+Cognito dashboard saved as: output/cognito_cost_analysis_dashboard.png
+Generating summary statistics...
+\n============================================================
+COGNITO COST ANALYSIS SUMMARY STATISTICS
+============================================================
+Data Period: 2024-09 to 2025-09
+Total Months: 13
+Months with Complete Data: 12
+\nMonthly Transaction Volume:
+  Average: 5,478,479,721 transactions/month
+  Median:  5,847,216,932 transactions/month
+  Min:     818,909,562 transactions/month
+  Max:     7,266,427,623 transactions/month
+  Growth:  640.1% over period
+\nMonthly Customer Volume:
+  Average: 9,951,800
+  Median:  9,957,888
+  Min:     7,188,191
+  Max:     12,599,674
+  Growth:  75.3% over period
+\nMonthly Cognito Costs:
+  Average: $23,723.36/month
+  Median:  $28,377.69/month
+  Min:     $8,824.74/month
+  Max:     $40,250.23/month
+  Total:   $284,680.31 (for 12 months)
+  Annual Projection: $284,680.31/year
+\n============================================================
+COGNITO VISUALIZATION COMPLETE
+============================================================
+Files created:
+  - output/cognito_cost_analysis_dashboard.png
+\nAnalysis shows monthly Cognito cost patterns and correlations.
+Cognito analysis complete.
+
+==========================================
+RUNNING PREDICTIVE COST ANALYSIS
+==========================================
+Running predictive cost analysis...
+============================================================
+BETLER PREDICTIVE COST ANALYSIS
+============================================================
+Customer Growth Rate: 3.0% per month
+Transaction Growth Rate: 5.0% per month
+Projection Period: 12 months
+
+Loading existing analysis data...
+Loaded core analysis data: 365 records
+Loaded Cognito analysis data: 13 records
+Loading prediction models...
+Loaded core model: R² = 0.8792
+Loaded Cognito model: R² = 0.8668
+Extracting baseline metrics...
+Baseline: 12,269,759 customers, 7,266,427,623 transactions/month
+Generating cost projections...
+Creating predictive dashboard...
+Predictive dashboard saved: output/predictive_cost_dashboard.png
+Saving projection data...
+Projections saved: output/predictive_cost_analysis.csv
+Generating summary report...
+Summary report saved: output/predictive_analysis_summary.txt
+
+============================================================
+PREDICTIVE ANALYSIS COMPLETE
+============================================================
+Files created:
+  - output/predictive_cost_dashboard.png
+  - output/predictive_cost_analysis.csv
+  - output/predictive_analysis_summary.txt
+
+Key Predictions:
+  Annual Cost Projection: $8,329,039.52
+  Year-End Customers: 16,984,216
+Running extended 24-month dashboard...
+Loading historical data...
+Loaded 363 historical data points
+Loading regression model...
+Generating predictive data...
+Generated 360 predictive data points
+Creating extended dashboard...
+Extended dashboard saved as: output/extended_24month_dashboard.png
+Generating summary statistics...
+
+======================================================================
+EXTENDED 24-MONTH ANALYSIS SUMMARY
+======================================================================
+Historical Period: 2024-09-24 to 2025-09-23 (363 days)
+Predictive Period: 2025-09-24 to 2026-09-18 (360 days)
+
+CURRENT VS FUTURE COMPARISON:
+Current (Latest Historical):
+  Transactions: 119,905,794/day
+  Customers: 12,599,674
+  AWS Cost: $12,679.13/day
+
+Projected (12 Months Future):
+  Transactions: 214,983,658/day (79.3% growth)
+  Customers: 17,946,431 (42.4% growth)
+  AWS Cost: $25,547.52/day (101.5% growth)
+
+MONTHLY COST PROJECTIONS:
+Historical Average: $321,381.23/month
+Future Average: $604,766.43/month
+Future Annual Projection: $7,257,197.11/year
+
+======================================================================
+EXTENDED DASHBOARD COMPLETE
+======================================================================
+Files created:
+  - output/extended_24month_dashboard.png
+
+Dashboard shows 12 months historical + 12 months predictive data
+Red vertical line indicates current date boundary
+✓ Predictive cost analysis complete
+
+==========================================
+ALL ANALYSES COMPLETE
+==========================================
+Results available in:
+  - betler_cost_analysis/output/
+  - cognito_cost_analysis/output/
+  - betler_predictive_analysis/output/
+
+View dashboards:
+  - open betler_cost_analysis/output/cost_analysis_dashboard.png
+  - open cognito_cost_analysis/output/cognito_cost_analysis_dashboard.png
+  - open betler_predictive_analysis/output/predictive_cost_dashboard.png
+  - open betler_predictive_analysis/output/extended_24month_dashboard.png
+
+======================================
+12-MONTH COST ESTIMATE
+======================================
+📊 FORWARD-LOOKING COST PROJECTION:
+
+  💰 Next 12 Months Total: $8,329,039.52
+  📈 Month 1 Cost: $537,246.26
+  📈 Month 12 Cost: $870,429.47
+  🔐 Cognito Costs (12 months): $319,219.11
+  ☁️  Core AWS Costs (12 months): $8,009,820.41
+
+  📊 View detailed breakdown: betler_predictive_analysis/output/predictive_analysis_summary.txt
+  📈 Monthly data: betler_predictive_analysis/output/predictive_cost_analysis.csv
+  📊 24-month visualization: betler_predictive_analysis/output/extended_24month_dashboard.png
+
+All analysis complete! 🎉
+Check the output directories for detailed results and visualizations.
