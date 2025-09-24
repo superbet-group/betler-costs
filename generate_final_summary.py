@@ -4,63 +4,51 @@ import os
 import json
 import pandas as pd
 
-def read_summary_file(filepath):
-    """Read and parse the predictive analysis summary file"""
+def read_json_results(filepath):
+    """Read and parse JSON results file"""
     try:
         if os.path.exists(filepath):
             with open(filepath, 'r') as f:
-                content = f.read()
-            return content
+                return json.load(f)
         return None
     except Exception:
         return None
 
 def extract_key_metrics():
-    """Extract key metrics from all analysis outputs"""
+    """Extract key metrics from all analysis JSON outputs"""
 
-    # Read predictive analysis summary
-    summary_path = "betler_predictive_analysis/output/predictive_analysis_summary.txt"
-    summary_content = read_summary_file(summary_path)
-
-    if not summary_content:
-        print("❌ Error: Predictive analysis summary not found")
+    # Read predictive analysis results
+    predictive_results = read_json_results("betler_predictive_analysis/output/results.json")
+    if not predictive_results:
+        print("❌ Error: Predictive analysis results not found")
         return None
 
-    # Extract key numbers from summary
-    metrics = {}
+    # Extract key numbers from predictive analysis JSON
+    metrics = {
+        'annual_total': predictive_results['projections']['annual_totals']['total_cost'],
+        'month1_cost': predictive_results['projections']['month_1']['total_cost'],
+        'month12_cost': predictive_results['projections']['month_12']['total_cost'],
+        'cognito_total': predictive_results['projections']['annual_totals']['cognito_cost'],
+        'core_total': predictive_results['projections']['annual_totals']['core_aws_cost']
+    }
 
-    # Look for annual total
-    for line in summary_content.split('\n'):
-        if "Annual Total Cost:" in line:
-            try:
-                cost_str = line.split(":")[1].strip().replace("$", "").replace(",", "")
-                metrics['annual_total'] = float(cost_str)
-            except:
-                pass
-        elif "Month 1 Cost:" in line:
-            try:
-                cost_str = line.split(":")[1].strip().replace("$", "").replace(",", "")
-                metrics['month1_cost'] = float(cost_str)
-            except:
-                pass
-        elif "Month 12 Cost:" in line:
-            try:
-                cost_str = line.split(":")[1].strip().replace("$", "").replace(",", "")
-                metrics['month12_cost'] = float(cost_str)
-            except:
-                pass
-        elif "Cognito Costs:" in line:
-            try:
-                cost_str = line.split(":")[1].strip().replace("$", "").replace(",", "")
-                metrics['cognito_total'] = float(cost_str)
-            except:
-                pass
-        elif "Core AWS Costs:" in line:
-            try:
-                cost_str = line.split(":")[1].strip().replace("$", "").replace(",", "")
-                metrics['core_total'] = float(cost_str)
-            except:
-                pass
+    # Add core analysis data if available
+    core_results = read_json_results("betler_cost_analysis/output/results.json")
+    if core_results:
+        metrics['core_analysis'] = {
+            'total_historical_cost': core_results['totals']['total_cost'],
+            'daily_average': core_results['totals']['average_daily_cost'],
+            'data_days': core_results['data_period']['days']
+        }
+
+    # Add Cognito analysis data if available
+    cognito_results = read_json_results("cognito_cost_analysis/output/results.json")
+    if cognito_results:
+        metrics['cognito_analysis'] = {
+            'total_historical_cost': cognito_results['totals']['total_cost'],
+            'monthly_average': cognito_results['totals']['average_monthly_cost'],
+            'data_months': cognito_results['data_period']['months']
+        }
 
     return metrics
 
@@ -68,47 +56,36 @@ def validate_data_quality():
     """Check data quality across all analyses"""
     issues = []
 
-    # Check core analysis model
-    core_model_path = "betler_cost_analysis/output/core_regression_model.json"
-    if os.path.exists(core_model_path):
-        try:
-            with open(core_model_path, 'r') as f:
-                core_model = json.load(f)
+    # Check core analysis results
+    core_results = read_json_results("betler_cost_analysis/output/results.json")
+    if core_results:
+        r_squared = core_results.get('model_performance', {}).get('r_squared', 0)
+        data_days = core_results.get('data_period', {}).get('days', 0)
 
-            r_squared = core_model.get('model', {}).get('r_squared', 0)
-            data_points = core_model.get('data_points', 0)
-
-            if r_squared < 0.7:
-                issues.append(f"Core model R² is low ({r_squared:.3f})")
-            if data_points < 300:
-                issues.append(f"Limited core data ({data_points} points)")
-
-        except Exception:
-            issues.append("Core model file corrupted")
+        if r_squared < 0.7:
+            issues.append(f"Core model R² is low ({r_squared:.3f})")
+        if data_days < 300:
+            issues.append(f"Limited core data ({data_days} days)")
     else:
-        issues.append("Core model missing")
+        issues.append("Core analysis results missing")
 
-    # Check Cognito analysis model
-    cognito_model_path = "cognito_cost_analysis/output/cognito_regression_model.json"
-    if os.path.exists(cognito_model_path):
-        try:
-            with open(cognito_model_path, 'r') as f:
-                cognito_model = json.load(f)
+    # Check Cognito analysis results
+    cognito_results = read_json_results("cognito_cost_analysis/output/results.json")
+    if cognito_results:
+        r_squared = cognito_results.get('model_performance', {}).get('r_squared', 0)
+        data_months = cognito_results.get('data_period', {}).get('months', 0)
 
-            r_squared = cognito_model.get('base_model', {}).get('r_squared', 0)
-
-            if r_squared < 0.7:
-                issues.append(f"Cognito model R² is low ({r_squared:.3f})")
-
-        except Exception:
-            issues.append("Cognito model file corrupted")
+        if r_squared < 0.7:
+            issues.append(f"Cognito model R² is low ({r_squared:.3f})")
+        if data_months < 6:
+            issues.append(f"Limited Cognito data ({data_months} months)")
     else:
-        issues.append("Cognito model missing")
+        issues.append("Cognito analysis results missing")
 
     return issues
 
 def main():
-    """Generate final clean summary"""
+    """Generate final clean summary with all completion information"""
 
     print("=" * 50)
     print("BETLER COST ANALYSIS - FINAL SUMMARY")
@@ -167,6 +144,27 @@ def main():
                 print(f"  - Moderate growth trajectory ({growth:.0f}%/year) - typical for growing platform")
             else:
                 print(f"  - Stable growth trajectory ({growth:.0f}%/year) - costs under control")
+
+    # Results and file locations
+    print()
+    print("=" * 50)
+    print("ALL ANALYSES COMPLETE")
+    print("=" * 50)
+    print("Results available in:")
+    print("  - betler_cost_analysis/output/")
+    print("  - cognito_cost_analysis/output/")
+    print("  - betler_predictive_analysis/output/")
+    print()
+    print("View dashboards:")
+    print("  - open betler_cost_analysis/output/cost_analysis_dashboard.png")
+    print("  - open cognito_cost_analysis/output/cognito_cost_analysis_dashboard.png")
+    print("  - open betler_predictive_analysis/output/extended_24month_dashboard.png")
+    print()
+    print("Key data files:")
+    print("  - betler_predictive_analysis/output/predictive_cost_analysis.csv")
+    print("  - betler_predictive_analysis/output/results.json")
+    print()
+    print("All analysis complete! 🎉")
 
 if __name__ == "__main__":
     main()

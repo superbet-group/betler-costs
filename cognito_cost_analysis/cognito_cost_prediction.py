@@ -4,6 +4,7 @@ import csv
 import numpy as np
 from datetime import datetime
 import sys
+import json
 
 def load_monthly_csv_data(filename):
     """Load monthly data from CSV file and return clean numerical data"""
@@ -144,6 +145,43 @@ def main():
             print(f"✓ Cost optimization: {reduction:.0f}% reduction detected")
 
 
+    # Create results.json with key metrics
+    total_cognito_cost = sum(cognito_costs)
+    avg_monthly_cost = np.mean(cognito_costs)
+
+    results = {
+        "analysis_type": "cognito_cost_analysis",
+        "analysis_date": datetime.now().isoformat(),
+        "data_period": {
+            "start": months[0],
+            "end": months[-1],
+            "months": len(months)
+        },
+        "totals": {
+            "total_cost": float(total_cognito_cost),
+            "average_monthly_cost": float(avg_monthly_cost)
+        },
+        "latest_metrics": {
+            "month": months[-1],
+            "transaction_volume": float(transaction_volumes[-1]),
+            "customer_volume": float(customer_volumes[-1]),
+            "monthly_cost": float(cognito_costs[-1])
+        },
+        "model_performance": {
+            "r_squared": float(r_squared_train),
+            "rmse": float(rmse),
+            "rmse_percentage": float((rmse/mean_cost)*100)
+        },
+        "optimization": {
+            "cutoff_date": "2025-07",
+            "factor": float(optimization_factor),
+            "detected_reduction_percentage": float(reduction) if 'reduction' in locals() else None
+        }
+    }
+
+    with open('output/results.json', 'w') as f:
+        json.dump(results, f, indent=2)
+
     # Save regression model as JSON for predictive analysis
     model_json = {
         "model_type": "hybrid_cognito",
@@ -174,7 +212,6 @@ def main():
         "generated_date": datetime.now().isoformat()
     }
 
-    import json
     with open('output/cognito_regression_model.json', 'w') as f:
         json.dump(model_json, f, indent=2)
 

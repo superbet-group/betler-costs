@@ -75,12 +75,8 @@ echo "Running extended 24-month dashboard..."
 echo "✓ Predictive cost analysis complete"
 cd ..
 
-# Generate final clean summary
-echo "==========================================="
-echo "GENERATING FINAL SUMMARY"
-echo "==========================================="
+# Generate final clean summary (includes all final output)
 ./venv/bin/python generate_final_summary.py
-echo ""
 
 # Clean up TSH proxies (only if we started them)
 if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
@@ -91,48 +87,3 @@ if [ "${SKIP_TSH_PROXY:-false}" != "true" ]; then
         kill $AWS_TSH_PID 2>/dev/null || true
     fi
 fi
-
-echo "=========================================="
-echo "ALL ANALYSES COMPLETE"
-echo "=========================================="
-echo "Results available in:"
-echo "  - betler_cost_analysis/output/"
-echo "  - cognito_cost_analysis/output/"
-echo "  - betler_predictive_analysis/output/"
-echo ""
-echo "View dashboards:"
-echo "  - open betler_cost_analysis/output/cost_analysis_dashboard.png"
-echo "  - open cognito_cost_analysis/output/cognito_cost_analysis_dashboard.png"
-echo "  - open betler_predictive_analysis/output/predictive_cost_dashboard.png"
-echo "  - open betler_predictive_analysis/output/extended_24month_dashboard.png"
-echo ""
-
-# Extract and display 12-month cost estimate
-echo "======================================"
-echo "12-MONTH COST ESTIMATE"
-echo "======================================"
-if [ -f "betler_predictive_analysis/output/predictive_analysis_summary.txt" ]; then
-    echo "📊 FORWARD-LOOKING COST PROJECTION:"
-    echo ""
-    # Extract key metrics from the summary file
-    ANNUAL_COST=$(grep "Annual Total Cost:" betler_predictive_analysis/output/predictive_analysis_summary.txt | awk '{print $4}')
-    MONTH1_COST=$(grep "Total Cost (Month 1):" betler_predictive_analysis/output/predictive_analysis_summary.txt | awk '{print $5}')
-    MONTH12_COST=$(grep "Total Cost (Month 12):" betler_predictive_analysis/output/predictive_analysis_summary.txt | awk '{print $5}')
-    COGNITO_TOTAL=$(grep "Cognito Costs:" betler_predictive_analysis/output/predictive_analysis_summary.txt | awk '{print $3}')
-    CORE_TOTAL=$(grep "Core AWS Costs:" betler_predictive_analysis/output/predictive_analysis_summary.txt | awk '{print $4}')
-
-    echo "  💰 Next 12 Months Total: $ANNUAL_COST"
-    echo "  📈 Month 1 Cost: $MONTH1_COST"
-    echo "  📈 Month 12 Cost: $MONTH12_COST"
-    echo "  🔐 Cognito Costs (12 months): $COGNITO_TOTAL"
-    echo "  ☁️  Core AWS Costs (12 months): $CORE_TOTAL"
-    echo ""
-    echo "  📊 View detailed breakdown: betler_predictive_analysis/output/predictive_analysis_summary.txt"
-    echo "  📈 Monthly data: betler_predictive_analysis/output/predictive_cost_analysis.csv"
-    echo "  📊 24-month visualization: betler_predictive_analysis/output/extended_24month_dashboard.png"
-else
-    echo "⚠ Cost estimate not available - predictive analysis may have failed"
-fi
-echo ""
-echo "All analysis complete! 🎉"
-echo "Check the output directories for detailed results and visualizations."

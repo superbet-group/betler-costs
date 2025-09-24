@@ -140,7 +140,35 @@ def main():
         with open('output/core_regression_model.json', 'w') as f:
             json.dump(model_json, f, indent=2)
 
-        # Silent save
+        # Create results.json with key metrics
+        results = {
+            "analysis_type": "core_cost_analysis",
+            "analysis_date": datetime.now().isoformat(),
+            "data_period": {
+                "start": dates[0],
+                "end": dates[-1],
+                "days": len(dates)
+            },
+            "totals": {
+                "total_cost": float(np.sum(aws_costs)),
+                "average_daily_cost": float(np.mean(aws_costs)),
+                "median_daily_cost": float(np.median(aws_costs))
+            },
+            "latest_metrics": {
+                "date": dates[-1],
+                "transaction_volume": float(transaction_volumes[-1]),
+                "customer_volume": float(customer_volumes[-1]),
+                "daily_cost": float(aws_costs[-1])
+            },
+            "model_performance": {
+                "r_squared": float(r_squared),
+                "rmse": float(rmse),
+                "rmse_percentage": float((rmse/np.mean(aws_costs))*100)
+            }
+        }
+
+        with open('output/results.json', 'w') as f:
+            json.dump(results, f, indent=2)
 
     except Exception as e:
         print(f"Error: {e}")

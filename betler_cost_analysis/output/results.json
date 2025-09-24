@@ -1,0 +1,25 @@
+{
+  "analysis_type": "core_cost_analysis",
+  "analysis_date": "2025-09-24T13:05:11.499874",
+  "data_period": {
+    "start": "2024-09-24",
+    "end": "2025-09-23",
+    "days": 363
+  },
+  "totals": {
+    "total_cost": 3888712.8393286183,
+    "average_daily_cost": 10712.70754635983,
+    "median_daily_cost": 10320.9159564646
+  },
+  "latest_metrics": {
+    "date": "2025-09-23",
+    "transaction_volume": 119905793.9562348,
+    "customer_volume": 12599674.0,
+    "daily_cost": 12679.129759906
+  },
+  "model_performance": {
+    "r_squared": 0.8791546465899777,
+    "rmse": 871.7254046363354,
+    "rmse_percentage": 8.137302366034877
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "analysis_type": "predictive_cost_analysis",
+  "analysis_date": "2025-09-24T13:05:22.720919",
+  "baseline": {
+    "period": "2025-08",
+    "monthly_customers": 12269759.0,
+    "monthly_transactions": 7266427623.428679,
+    "monthly_cognito_cost": 18654.115042
+  },
+  "growth_parameters": {
+    "customer_growth_rate_monthly": 0.03,
+    "transaction_growth_rate_monthly": 0.05
+  },
+  "projections": {
+    "period_months": 12,
+    "month_1": {
+      "customers": 12269759.0,
+      "total_cost": 537246.2649123437
+    },
+    "month_12": {
+      "customers": 16984215.993426107,
+      "total_cost": 870429.4676198588
+    },
+    "annual_totals": {
+      "total_cost": 8329039.515548425,
+      "cognito_cost": 319219.1082597707,
+      "core_aws_cost": 8009820.407288654,
+      "cognito_percentage": 3.83260407954436,
+      "core_percentage": 96.16739592045563
+    }
+  }
+}

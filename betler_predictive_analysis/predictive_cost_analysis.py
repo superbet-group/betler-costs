@@ -307,55 +307,55 @@ def save_projections_csv(projections, baseline, output_dir='output'):
 
     return csv_path
 
-def create_summary_report(baseline, projections, output_dir='output'):
-    """Generate text summary report"""
+def create_results_json(baseline, projections, output_dir='output'):
+    """Generate structured JSON results file"""
 
-    report_path = f'{output_dir}/predictive_analysis_summary.txt'
+    # Calculate key summary metrics
+    first_month = projections[0] if projections else {}
+    annual_projections = projections[:12] if len(projections) >= 12 else projections
 
-    with open(report_path, 'w') as f:
-        f.write("BETLER PREDICTIVE COST ANALYSIS SUMMARY\n")
-        f.write("=" * 50 + "\n\n")
+    annual_cognito = sum([p['predicted_cognito_cost'] for p in annual_projections]) if annual_projections else 0
+    annual_core = sum([p['predicted_core_cost'] for p in annual_projections]) if annual_projections else 0
+    annual_total = annual_cognito + annual_core
 
-        f.write(f"Analysis Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write(f"Baseline Period: {baseline.get('month', 'unknown')}\n")
-        f.write(f"Projection Period: {len(projections)} months\n\n")
+    results = {
+        "analysis_type": "predictive_cost_analysis",
+        "analysis_date": datetime.now().isoformat(),
+        "baseline": {
+            "period": baseline.get('month', 'unknown'),
+            "monthly_customers": baseline.get('monthly_customers', 0),
+            "monthly_transactions": baseline.get('monthly_transactions', 0),
+            "monthly_cognito_cost": baseline.get('cognito_cost', 0)
+        },
+        "growth_parameters": {
+            "customer_growth_rate_monthly": projections[0]['customer_growth_rate'] if projections else 0.03,
+            "transaction_growth_rate_monthly": projections[0]['transaction_growth_rate'] if projections else 0.05
+        },
+        "projections": {
+            "period_months": len(projections),
+            "month_1": {
+                "customers": first_month.get('projected_customers', 0),
+                "total_cost": first_month.get('predicted_total_cost', 0)
+            },
+            "month_12": {
+                "customers": projections[11]['projected_customers'] if len(projections) >= 12 else 0,
+                "total_cost": projections[11]['predicted_total_cost'] if len(projections) >= 12 else 0
+            },
+            "annual_totals": {
+                "total_cost": annual_total,
+                "cognito_cost": annual_cognito,
+                "core_aws_cost": annual_core,
+                "cognito_percentage": (annual_cognito / annual_total * 100) if annual_total > 0 else 0,
+                "core_percentage": (annual_core / annual_total * 100) if annual_total > 0 else 0
+            }
+        }
+    }
 
-        f.write("BASELINE METRICS:\n")
-        f.write(f"  Monthly Customers: {baseline.get('monthly_customers', 0):,.0f}\n")
-        f.write(f"  Monthly Transactions: {baseline.get('monthly_transactions', 0):,.0f}\n")
-        f.write(f"  Monthly Cognito Cost: ${baseline.get('cognito_cost', 0):,.2f}\n\n")
+    results_path = f'{output_dir}/results.json'
+    with open(results_path, 'w') as f:
+        json.dump(results, f, indent=2)
 
-        f.write("GROWTH PARAMETERS:\n")
-        f.write(f"  Customer Growth Rate: {projections[0]['customer_growth_rate']*100:.1f}% per month\n")
-        f.write(f"  Transaction Growth Rate: {projections[0]['transaction_growth_rate']*100:.1f}% per month\n\n")
-
-        # Calculate key summary metrics
-        first_month = projections[0]
-        last_month = projections[-1]
-        annual_projections = projections[:12] if len(projections) >= 12 else projections
-
-        f.write("12-MONTH PROJECTIONS:\n")
-        f.write(f"  Customers (Month 1): {first_month['projected_customers']:,.0f}\n")
-        f.write(f"  Customers (Month 12): {projections[11]['projected_customers']:,.0f}\n" if len(projections) >= 12 else "")
-        f.write(f"  Customer Growth: {((projections[11]['projected_customers'] / first_month['projected_customers']) - 1) * 100:.1f}%\n" if len(projections) >= 12 else "")
-        f.write("\n")
-
-        f.write(f"  Total Cost (Month 1): ${first_month['predicted_total_cost']:,.2f}\n")
-        f.write(f"  Total Cost (Month 12): ${projections[11]['predicted_total_cost']:,.2f}\n" if len(projections) >= 12 else "")
-        f.write(f"  Annual Total Cost: ${sum([p['predicted_total_cost'] for p in annual_projections]):,.2f}\n")
-        f.write("\n")
-
-        f.write("COST BREAKDOWN (12-Month Total):\n")
-        annual_cognito = sum([p['predicted_cognito_cost'] for p in annual_projections])
-        annual_core = sum([p['predicted_core_cost'] for p in annual_projections])
-        annual_total = annual_cognito + annual_core
-
-        f.write(f"  Cognito Costs: ${annual_cognito:,.2f} ({annual_cognito/annual_total*100:.1f}%)\n")
-        f.write(f"  Core AWS Costs: ${annual_core:,.2f} ({annual_core/annual_total*100:.1f}%)\n")
-        f.write(f"  Total: ${annual_total:,.2f}\n")
-
-    print(f"Summary report saved: {report_path}")
-    return report_path
+    return results_path
 
 def main():
     """Main execution function with command line arguments"""
@@ -404,9 +404,9 @@ def main():
     output_dir = 'output'
     os.makedirs(output_dir, exist_ok=True)
 
-    # Save data and create summary report
+    # Save data and create structured results
     save_projections_csv(projections, baseline, output_dir)
-    create_summary_report(baseline, projections, output_dir)
+    create_results_json(baseline, projections, output_dir)
 
     # Key validation
     annual_total = sum([p['predicted_total_cost'] for p in projections]) if projections else 0

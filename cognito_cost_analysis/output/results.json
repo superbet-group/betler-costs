@@ -1,0 +1,29 @@
+{
+  "analysis_type": "cognito_cost_analysis",
+  "analysis_date": "2025-09-24T13:05:21.318872",
+  "data_period": {
+    "start": "2024-09",
+    "end": "2025-08",
+    "months": 12
+  },
+  "totals": {
+    "total_cost": 284680.3068284599,
+    "average_monthly_cost": 23723.35890237166
+  },
+  "latest_metrics": {
+    "month": "2025-08",
+    "transaction_volume": 7266427623.428679,
+    "customer_volume": 12269759.0,
+    "monthly_cost": 18654.115042
+  },
+  "model_performance": {
+    "r_squared": 0.8667771204943335,
+    "rmse": 3199.8804690775905,
+    "rmse_percentage": 13.488311171474516
+  },
+  "optimization": {
+    "cutoff_date": "2025-07",
+    "factor": 0.4,
+    "detected_reduction_percentage": 48.012458307846124
+  }
+}
